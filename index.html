@@ -2,159 +2,189 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>منوی تالار</title>
+  <title>منوی باغ‌تالار پامچال</title>
+
   <style>
     @page {
       size: A4;
       margin: 20mm;
     }
-    .menu-price {
-  font-size: 14px;
-  font-weight: bold;
-  color: #f4c15d;
-  margin-bottom: 8px;
-}
 
     body {
       margin: 0;
       font-family: "IRANSans", "Tahoma", sans-serif;
-      /* بک‌گراند اصلی */
       background-image: url('photo-output.jpeg');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
       background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      /* Ultra HD enhancement */
+      filter: brightness(1.18) contrast(1.15) saturate(1.25);
+
       color: #f5f5f5;
       direction: rtl;
     }
+
     .page {
       padding: 24px 32px;
       box-sizing: border-box;
-      /* لایه نیمه‌شفاف روی بک‌گراند، نه کاملاً مشکی */
-      background: rgba(0, 0, 0, 0.55);
+
+      /* شیشه‌ای واقعی */
+      background: rgba(0,0,0,0.18);
+      backdrop-filter: blur(6px);
+      border-radius: 18px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.45);
     }
+
     h1, h2, h3, h4 {
       margin: 8px 0;
       font-weight: 700;
     }
+
     h1 {
-      font-size: 26px;
+      font-size: 30px;
       text-align: center;
-      color: #f4c15d;
-      margin-bottom: 16px;
+      color: #ffd36b;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
+
     h2 {
-      font-size: 20px;
-      color: #f4c15d;
-      border-bottom: 1px solid #444;
-      padding-bottom: 4px;
-      margin-top: 24px;
+      font-size: 22px;
+      color: #ffd36b;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+      padding-bottom: 6px;
+      margin-top: 28px;
+      text-shadow: 0 0 8px rgba(0,0,0,0.6);
     }
-    h3 {
-      font-size: 18px;
-      color: #f4c15d;
-      margin-top: 16px;
-    }
-    h4 {
-      font-size: 16px;
-      color: #f4c15d;
-      margin-top: 10px;
-    }
+
     .prices {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 6px 24px;
-      margin-bottom: 16px;
-      font-size: 14px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 28px;
+      margin-bottom: 20px;
+      font-size: 15px;
     }
+
     .price-item {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px dashed #444;
-      padding: 2px 0;
+      padding: 8px 12px;
+      border-radius: 10px;
+
+      background: rgba(0,0,0,0.28);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
     }
+
     .price-item span:first-child {
-      color: #f4c15d;
-      font-weight: 600;
-    }
-    .section {
-      margin-top: 12px;
-      font-size: 13px;
-      line-height: 1.7;
-    }
-  .menu-card {
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 10px 12px;
-  margin-top: 10px;
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(3px);
-}
- 
-    .menu-title {
-      font-size: 15px;
+      color: #ffd36b;
       font-weight: 700;
-      color: #f4c15d;
-      margin-bottom: 6px;
     }
+
+    .menu-card {
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-top: 18px;
+
+      background: rgba(0,0,0,0.28);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+
+      transition: 0.3s;
+    }
+
+    .menu-card:hover {
+      background: rgba(0,0,0,0.38);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+    }
+
+    .menu-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffd36b;
+      margin-bottom: 6px;
+      text-shadow: 0 0 6px rgba(0,0,0,0.6);
+    }
+
+    .menu-price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffdd8a;
+      margin-bottom: 10px;
+      text-shadow: 0 0 6px rgba(0,0,0,0.6);
+    }
+
     .label {
       font-weight: 600;
-      color: #f4c15d;
-      margin-top: 6px;
-      font-size: 13px;
+      color: #ffd36b;
+      margin-top: 8px;
+      font-size: 14px;
     }
+
     ul {
       margin: 4px 0 4px 0;
-      padding-right: 16px;
+      padding-right: 20px;
       list-style: "• ";
     }
+
     ul li {
-      margin: 1px 0;
+      margin: 2px 0;
+      font-size: 13px;
     }
+
     .small {
       font-size: 12px;
     }
+
     .divider {
-      border-top: 1px solid #333;
-      margin: 16px 0;
+      border-top: 1px solid rgba(255,255,255,0.25);
+      margin: 20px 0;
     }
   </style>
 </head>
+
 <body>
   <div class="page">
 
-    <!-- تیتر اصلی و قیمت‌ها -->
     <h1>💰 قیمت منوها</h1>
+
     <div class="prices">
-      <!-- ردیف ۱: منو ۱ - منو ۴ -->
+
       <div class="price-item">
         <span>منو ۱</span>
         <span>۱,۲۰۰,۰۰۰ تومان</span>
       </div>
+
       <div class="price-item">
         <span>منو ۴</span>
         <span>۳,۰۰۰,۰۰۰ تومان</span>
       </div>
 
-      <!-- ردیف ۲: منو ۲ - منو ۵ -->
       <div class="price-item">
         <span>منو ۲</span>
         <span>۱,۵۰۰,۰۰۰ تومان</span>
       </div>
+
       <div class="price-item">
         <span>منو ۵</span>
         <span>۴,۰۰۰,۰۰۰ تومان</span>
       </div>
 
-      <!-- ردیف ۳: منو ۳ - منو ۶ -->
       <div class="price-item">
         <span>منو ۳</span>
         <span>۲,۰۰۰,۰۰۰ تومان</span>
       </div>
+
       <div class="price-item">
         <span>منو ۶</span>
         <span>۵,۰۰۰,۰۰۰ تومان</span>
       </div>
+
     </div>
 
     <div class="divider"></div>
@@ -165,6 +195,7 @@
     <!-- منوی ۱ -->
     <div class="menu-card">
       <div class="menu-title">⭐ منوی ۱</div>
+      <div class="menu-price">قیمت: ۱,۲۰۰,۰۰۰ تومان</div>
 
       <div class="label">غذاها:</div>
       <ul>
@@ -197,6 +228,7 @@
     <!-- منوی ۲ -->
     <div class="menu-card">
       <div class="menu-title">⭐ منوی ۲</div>
+      <div class="menu-price">قیمت: ۱,۵۰۰,۰۰۰ تومان</div>
 
       <div class="label">غذاها:</div>
       <ul>
@@ -240,10 +272,10 @@
         <li>تخفیف‌نامه مزون، آتلیه و آرایشگاه</li>
       </ul>
     </div>
-
     <!-- منوی ۳ -->
     <div class="menu-card">
       <div class="menu-title">⭐ منوی ۳</div>
+      <div class="menu-price">قیمت: ۲,۰۰۰,۰۰۰ تومان</div>
 
       <div class="label">غذاها:</div>
       <ul>
@@ -293,6 +325,7 @@
     <!-- منوی ۴ -->
     <div class="menu-card">
       <div class="menu-title">⭐ منوی ۴</div>
+      <div class="menu-price">قیمت: ۳,۰۰۰,۰۰۰ تومان</div>
 
       <div class="label">غذاها:</div>
       <ul>
@@ -353,6 +386,7 @@
     <!-- منوی ۵ -->
     <div class="menu-card">
       <div class="menu-title">⭐ منوی ۵</div>
+      <div class="menu-price">قیمت: ۴,۰۰۰,۰۰۰ تومان</div>
 
       <div class="label">غذاها:</div>
       <ul>
@@ -410,10 +444,10 @@
         <li>تخفیف‌نامه مزون، آتلیه و آرایشگاه</li>
       </ul>
     </div>
-
     <!-- منوی ۶ -->
     <div class="menu-card">
       <div class="menu-title">⭐ منوی ۶</div>
+      <div class="menu-price">قیمت: ۵,۰۰۰,۰۰۰ تومان</div>
 
       <div class="label">غذاها:</div>
       <ul>
