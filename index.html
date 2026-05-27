@@ -5,27 +5,82 @@
   <title>منوی باغ‌تالار پامچال</title>
 
   <style>
-    @page {
-      size: A4;
-      margin: 20mm;
-    }
+body {
+  margin: 0;
+  font-family: "IRANSans", "Tahoma", sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 40%, #3a2a1a 100%);
+  color: #f5f5f5;
+  direction: rtl;
+}
 
-    body {
-      margin: 0;
-      font-family: "IRANSans", "Tahoma", sans-serif;
-      background-image: url('photo-output.webp');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+.page {
+  padding: 24px 32px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.55);
+  border: 2px solid #d4af37;
+  border-radius: 18px;
+  box-shadow: 0 0 35px rgba(212,175,55,0.35);
+}
 
-      /* Ultra HD enhancement */
-      filter: brightness(1.18) contrast(1.15) saturate(1.25);
+h1 {
+  font-size: 34px;
+  text-align: center;
+  color: #d4af37;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
 
-      color: #f5f5f5;
-      direction: rtl;
-    }
-    body {
+h2 {
+  font-size: 24px;
+  color: #d4af37;
+  border-bottom: 1px solid rgba(212,175,55,0.4);
+  padding-bottom: 6px;
+  margin-top: 28px;
+}
+
+.menu-card {
+  border: 1px solid rgba(212,175,55,0.5);
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 20px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(212,175,55,0.25);
+}
+
+.menu-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #d4af37;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+.menu-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d4af37;
+  margin-bottom: 12px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d4af37;
+  margin-top: 10px;
+}
+
+ul {
+  margin: 6px 0;
+  padding-right: 20px;
+  list-style: "• ";
+}
+
+ul li {
+  font-size: 15px;
+  margin: 3px 0;
+  color: #fff;
   text-shadow: 
     -1px -1px 0 #000,
      1px -1px 0 #000,
@@ -33,126 +88,30 @@
      1px  1px 0 #000;
 }
 
+.small {
+  font-size: 14px;
+}
 
-    .page {
-      padding: 24px 32px;
-      box-sizing: border-box;
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(212,175,55,0.4);
+  box-shadow: 0 0 12px rgba(212,175,55,0.25);
+}
 
-      /* شیشه‌ای واقعی */
-      background: rgba(0,0,0,0.18);
-      backdrop-filter: blur(6px);
-      border-radius: 18px;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.45);
-    }
+.price-item span:first-child {
+  color: #d4af37;
+  font-weight: 700;
+}
 
-    h1, h2, h3, h4 {
-      margin: 8px 0;
-      font-weight: 700;
-    }
+.divider {
+  border-top: 1px solid rgba(212,175,55,0.4);
+  margin: 20px 0;
+}
 
-    h1 {
-      font-size: 30px;
-      text-align: center;
-      color: #ffd36b;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px rgba(0,0,0,0.7);
-    }
-
-    h2 {
-      font-size: 22px;
-      color: #ffd36b;
-      border-bottom: 1px solid rgba(255,255,255,0.25);
-      padding-bottom: 6px;
-      margin-top: 28px;
-      text-shadow: 0 0 8px rgba(0,0,0,0.6);
-    }
-
-    .prices {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px 28px;
-      margin-bottom: 20px;
-      font-size: 15px;
-    }
-
-    .price-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 12px;
-      border-radius: 10px;
-
-      background: rgba(0,0,0,0.28);
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-    }
-
-    .price-item span:first-child {
-      color: #ffd36b;
-      font-weight: 700;
-    }
-
-    .menu-card {
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin-top: 18px;
-
-      background: rgba(0,0,0,0.28);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.45);
-
-      transition: 0.3s;
-    }
-
-    .menu-card:hover {
-      background: rgba(0,0,0,0.38);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.55);
-    }
-
-    .menu-title {
-      font-size: 18px;
-      font-weight: 700;
-      color: #ffd36b;
-      margin-bottom: 6px;
-      text-shadow: 0 0 6px rgba(0,0,0,0.6);
-    }
-
-    .menu-price {
-      font-size: 16px;
-      font-weight: bold;
-      color: #ffdd8a;
-      margin-bottom: 10px;
-      text-shadow: 0 0 6px rgba(0,0,0,0.6);
-    }
-
-    .label {
-      font-weight: 600;
-      color: #ffd36b;
-      margin-top: 8px;
-      font-size: 14px;
-    }
-
-    ul {
-      margin: 4px 0 4px 0;
-      padding-right: 20px;
-      list-style: "• ";
-    }
-
-    ul li {
-      margin: 2px 0;
-      font-size: 13px;
-    }
-
-    .small {
-      font-size: 12px;
-    }
-
-    .divider {
-      border-top: 1px solid rgba(255,255,255,0.25);
-      margin: 20px 0;
-    }
   </style>
 </head>
 
