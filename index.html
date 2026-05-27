@@ -31,15 +31,6 @@
       border-bottom: 1px solid rgba(255,255,255,0.2);
     }
 
-    .call-btn {
-      background: #ffcc00;
-      color: #000;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
     .page {
       padding: 24px 32px;
       box-sizing: border-box;
@@ -59,88 +50,15 @@
       text-shadow: 0 0 10px rgba(0,0,0,0.8);
     }
 
-    h2 {
-      font-size: 24px;
-      color: #d4af37;
-      border-bottom: 1px solid rgba(212,175,55,0.4);
-      padding-bottom: 6px;
-      margin-top: 28px;
+    @keyframes fadeIn {
+      from { opacity:0; transform: translateY(20px); }
+      to   { opacity:1; transform: translateY(0); }
     }
 
-    .menu-card {
-      border: 1px solid rgba(212,175,55,0.5);
-      border-radius: 14px;
-      padding: 20px;
-      margin-top: 20px;
-      background: rgba(0,0,0,0.45);
-      backdrop-filter: blur(6px);
-      box-shadow: 0 0 20px rgba(212,175,55,0.25);
-    }
-
-    .menu-title {
-      font-size: 20px;
-      font-weight: 700;
-      color: #d4af37;
-      margin-bottom: 10px;
-      text-shadow: 0 0 6px rgba(0,0,0,0.7);
-    }
-
-    .menu-price {
-      font-size: 18px;
-      font-weight: bold;
-      color: #d4af37;
-      margin-bottom: 12px;
-      text-shadow: 0 0 6px rgba(0,0,0,0.7);
-    }
-
-    .label {
-      font-size: 16px;
-      font-weight: 600;
-      color: #d4af37;
-      margin-top: 10px;
-    }
-
-    ul {
-      margin: 6px 0;
-      padding-right: 20px;
-      list-style: "• ";
-    }
-
-    ul li {
-      font-size: 15px;
-      margin: 3px 0;
-      color: #fff;
-      text-shadow: 
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-    }
-
-    .small {
-      font-size: 14px;
-    }
-
-    .price-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 14px;
-      border-radius: 10px;
-      background: rgba(0,0,0,0.35);
-      border: 1px solid rgba(212,175,55,0.4);
-      box-shadow: 0 0 12px rgba(212,175,55,0.25);
-    }
-
-    .price-item span:first-child,
-    .price-item span:last-child {
-      color: #d4af37;
-      font-weight: 700;
-      text-shadow: 0 0 6px rgba(0,0,0,0.7);
-    }
-
-    .divider {
-      border-top: 1px solid rgba(212,175,55,0.4);
-      margin: 20px 0;
+    @keyframes floatLogo {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
     }
   </style>
 </head>
@@ -149,42 +67,25 @@
 
   <div class="header">
 
-  <!-- دکمه اینستاگرام -->
-  <a href="https://www.instagram.com/Pamchal_garden_hall/
-" 
-     style="background:#d62976; color:#fff; padding:8px 14px; border-radius:8px; font-weight:600; text-decoration:none;">
-     اینستاگرام
-  </a>
+    <a href="https://www.instagram.com/Pamchal_garden_hall/"
+       style="background:#d62976; color:#fff; padding:8px 14px; border-radius:8px; font-weight:600; text-decoration:none;">
+       اینستاگرام
+    </a>
 
-  <!-- دکمه واتساپ -->
-  <a href="https://wa.me/989153696949"
-     style="background:#25D366; color:#000; padding:8px 14px; border-radius:8px; font-weight:600; text-decoration:none;">
-     واتساپ
-  </a>
+    <a href="https://wa.me/989153696949"
+       style="background:#25D366; color:#000; padding:8px 14px; border-radius:8px; font-weight:600; text-decoration:none;">
+       واتساپ
+    </a>
 
-  <!-- دکمه تماس -->
-  <a href="tel:09153696949" 
-     style="background:#ffcc00; color:#000; padding:8px 14px; border-radius:8px; font-weight:600; text-decoration:none;">
-     تماس
-  </a>
+    <a href="tel:09153696949"
+       style="background:#ffcc00; color:#000; padding:8px 14px; border-radius:8px; font-weight:600; text-decoration:none;">
+       تماس
+    </a>
 
-</div>
-
-    <!-- اینجا ادامه منوها و کارت‌هایت را بگذار -->
-  </div>
-
-</style>
-</head>
-
-<body>
-
-  <div class="header">
-    <!-- دکمه‌ها -->
   </div>
 
   <div class="page">
 
-    <!-- لوگو لاکچری -->
     <div style="
       text-align:center;
       margin-bottom:25px;
@@ -197,7 +98,7 @@
       animation: fadeIn 1s ease-out;
     ">
 
-      <img src="v2ujoccg76cheu4emjcvvi3ns1577792-final2.png" alt="لوگوی پامچال"
+      <img src="2.png" alt="لوگوی پامچال"
            style="
              width:130px;
              height:auto;
@@ -210,18 +111,10 @@
 
     <h1>قیمت منوهای باغ‌تالار پامچال</h1>
 
-<style>
-@keyframes fadeIn {
-  from { opacity:0; transform: translateY(20px); }
-  to   { opacity:1; transform: translateY(0); }
-}
+  </div>
 
-@keyframes floatLogo {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-8px); }
-  100% { transform: translateY(0); }
-}
-</style>
+</body>
+</html>
 
     <h1>💰 قیمت منوهای باغ‌تالار پامچال</h1>
 
