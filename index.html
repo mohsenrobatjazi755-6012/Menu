@@ -8,19 +8,6 @@
 
   <style>
     html { scroll-behavior: smooth; }
-.header {
-  gap: 10px !important;
-}
-
-.page {
-  margin-top: 30px !important;
-}
-
-.location-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
     body {
       margin: 0;
@@ -37,12 +24,14 @@
       backdrop-filter: blur(10px);
       padding: 12px 20px;
       display: flex;
-      justify-content: space-between;
+      gap: 10px;               /* مهم */
+      justify-content: flex-start; /* مهم */
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 999;
       border-bottom: 1px solid rgba(255,255,255,0.2);
+      flex-wrap: wrap;         /* مهم */
     }
 
     .header a {
@@ -61,7 +50,7 @@
 
     .location-menu {
       position: absolute;
-      top: 50px;
+      top: 45px;
       right: 0;
       background: rgba(0,0,0,0.85);
       border: 1px solid #d4af37;
@@ -97,6 +86,7 @@
       box-shadow: 0 0 35px rgba(212,175,55,0.35);
       max-width: 900px;
       margin: 24px auto;
+      margin-top: 40px; /* فاصله از هدر */
     }
 
     /* لوگو */
@@ -189,7 +179,7 @@
       ">
     </div>
 
-    <h1>قیمت منوهای باغتالار پامچال💰</h1>
+    <h1>قیمت منوهای باغتالار پامچال</h1>
 
   </div>
 
