@@ -39,6 +39,109 @@
       font-weight: 600;
       text-decoration: none;
     }
+
+    .page {
+      padding: 24px 32px;
+      box-sizing: border-box;
+      background: rgba(0, 20, 10, 0.55);
+      border: 2px solid #d4af37;
+      border-radius: 18px;
+      box-shadow: 0 0 35px rgba(212,175,55,0.35);
+      max-width: 900px;
+      margin: 24px auto;
+    }
+
+    h1 {
+      font-size: 34px;
+      text-align: center;
+      color: #d4af37;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #d4af37;
+      border-bottom: 1px solid rgba(212,175,55,0.4);
+      padding-bottom: 6px;
+      margin-top: 28px;
+    }
+
+    .menu-card {
+      border: 1px solid rgba(212,175,55,0.5);
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 20px;
+      background: rgba(0,0,0,0.45);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 20px rgba(212,175,55,0.25);
+    }
+
+    .menu-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #d4af37;
+      margin-bottom: 10px;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+
+    .menu-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d4af37;
+      margin-bottom: 12px;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+
+    .label {
+      font-size: 16px;
+      font-weight: 600;
+      color: #d4af37;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin: 6px 0;
+      padding-right: 20px;
+      list-style: "• ";
+    }
+
+    ul li {
+      font-size: 15px;
+      margin: 3px 0;
+      color: #fff;
+      text-shadow: 
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
+
+    .small {
+      font-size: 14px;
+    }
+
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(212,175,55,0.4);
+      box-shadow: 0 0 12px rgba(212,175,55,0.25);
+    }
+
+    .price-item span:first-child,
+    .price-item span:last-child {
+      color: #d4af37;
+      font-weight: 700;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+
+    .divider {
+      border-top: 1px solid rgba(212,175,55,0.4);
+      margin: 20px 0;
+    }
   </style>
 </head>
 
@@ -46,116 +149,17 @@
 
   <div class="header">
     <span style="font-weight:600;">منوی پامچال</span>
-
     <a href="tel:09153696949" class="call-btn">
       تماس برای پاسخگویی و رزرو
     </a>
   </div>
 
-.page {
-  padding: 24px 32px;
-  box-sizing: border-box;
-  background: rgba(0, 20, 10, 0.55);
-  border: 2px solid #d4af37;
-  border-radius: 18px;
-  box-shadow: 0 0 35px rgba(212,175,55,0.35);
-}
+  <div class="page">
+    <!-- اینجا ادامه منوها و کارت‌هایت را بگذار -->
+  </div>
 
-h1 {
-  font-size: 34px;
-  text-align: center;
-  color: #d4af37;
-  margin-bottom: 20px;
-  text-shadow: 0 0 10px rgba(0,0,0,0.8);
-}
-
-h2 {
-  font-size: 24px;
-  color: #d4af37;
-  border-bottom: 1px solid rgba(212,175,55,0.4);
-  padding-bottom: 6px;
-  margin-top: 28px;
-}
-
-.menu-card {
-  border: 1px solid rgba(212,175,55,0.5);
-  border-radius: 14px;
-  padding: 20px;
-  margin-top: 20px;
-  background: rgba(0,0,0,0.45);
-  backdrop-filter: blur(6px);
-  box-shadow: 0 0 20px rgba(212,175,55,0.25);
-}
-
-.menu-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #d4af37;
-  margin-bottom: 10px;
-  text-shadow: 0 0 6px rgba(0,0,0,0.7);
-}
-
-.menu-price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #d4af37;
-  margin-bottom: 12px;
-  text-shadow: 0 0 6px rgba(0,0,0,0.7);
-}
-
-.label {
-  font-size: 16px;
-  font-weight: 600;
-  color: #d4af37;
-  margin-top: 10px;
-}
-
-ul {
-  margin: 6px 0;
-  padding-right: 20px;
-  list-style: "• ";
-}
-
-ul li {
-  font-size: 15px;
-  margin: 3px 0;
-  color: #fff;
-  text-shadow: 
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-}
-
-.small {
-  font-size: 14px;
-}
-
-.price-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 14px;
-  border-radius: 10px;
-  background: rgba(0,0,0,0.35);
-  border: 1px solid rgba(212,175,55,0.4);
-  box-shadow: 0 0 12px rgba(212,175,55,0.25);
-}
-.price-item span:first-child {
-    color: #d4af37;
-    font-weight: 700;
-    text-shadow: 0 0 6px rgba(0,0,0,0.7);
-}
-
-.price-item span:last-child {
-  color: #d4af37;
-  font-weight: 700;
-  text-shadow: 0 0 6px rgba(0,0,0,0.7);
-}
-
-.divider {
-  border-top: 1px solid rgba(212,175,55,0.4);
-  margin: 20px 0;
-}
+</body>
+</html>
 
   </style>
 </head>
