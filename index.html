@@ -147,6 +147,29 @@
 
   flex: 0 0 auto; /* مهم‌ترین خط → جلوگیری از شکستن متن */
 }
+.contact-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  flex: 0 0 auto;
+
+  line-height: 1; /* مهم‌ترین خط → خط زیر نوشته حذف می‌شود */
+}
+
+.contact-buttons a img {
+  width: 18px;
+  height: 18px; /* آیکون هم‌تراز می‌شود */
+  display: block; /* جلوگیری از خط زیر آیکون */
+}
 
   </style>
 </head>
