@@ -143,6 +143,44 @@ h1 {
   height: 18px;
   display: block; /* جلوگیری از خط زیر آیکون */
 }
+    .contact-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  flex: 0 0 auto;
+  line-height: 1 !important;
+  text-decoration: none;
+}
+
+.contact-buttons .btn img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* رنگ‌ها */
+.btn.call { background:#ffcc00; color:#000; }
+.btn.whatsapp { background:#25D366; color:#000; }
+.btn.instagram { background:#d62976; color:#fff; }
+.btn.location { background:#4CAF50; color:#fff; cursor:pointer; }
+
   </style>
 </head>
 
