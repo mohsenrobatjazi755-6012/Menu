@@ -17,21 +17,28 @@
       direction: rtl;
     }
 
+    /* کادر سلطنتی */
+    .royal-box {
+      background: rgba(0, 0, 0, 0.35);
+      border: 2px solid #d4af37;
+      border-radius: 18px;
+      padding: 18px;
+      margin: 22px auto;
+      box-shadow:
+        0 0 12px rgba(212,175,55,0.45),
+        0 0 25px rgba(212,175,55,0.35),
+        inset 0 0 12px rgba(212,175,55,0.25);
+      backdrop-filter: blur(8px);
+      max-width: 900px;
+    }
+
     /* هدر */
     .header {
       width: 100%;
-      background: rgba(0,0,0,0.65);
-      backdrop-filter: blur(10px);
-      padding: 12px 20px;
       display: flex;
       gap: 10px;
-      justify-content: flex-start;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .header a {
@@ -41,12 +48,13 @@
       font-weight: 600;
       font-size: 14px;
       white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    /* منوی انتخاب مکان‌یاب */
-    .location-wrapper {
-      position: relative;
-    }
+    /* منوی مکان‌یاب */
+    .location-wrapper { position: relative; }
 
     .location-menu {
       position: absolute;
@@ -77,17 +85,6 @@
       color: #000;
     }
 
-    /* صفحه */
-    .page {
-      padding: 24px 16px;
-      background: rgba(0, 20, 10, 0.55);
-      border: 2px solid #d4af37;
-      border-radius: 18px;
-      box-shadow: 0 0 35px rgba(212,175,55,0.35);
-      max-width: 900px;
-      margin: 40px auto 24px auto;
-    }
-
     /* لوگو */
     @keyframes fadeIn {
       from { opacity:0; transform: translateY(20px); }
@@ -104,7 +101,7 @@
       font-size: 26px;
       text-align: center;
       color: #d4af37;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       text-shadow: 0 0 10px rgba(0,0,0,0.8);
     }
   </style>
@@ -112,72 +109,55 @@
 
 <body>
 
-  <div class="header">
+  <!-- هدر در کادر سلطنتی -->
+  <div class="royal-box">
+    <div class="header">
 
-    <!-- تماس -->
-    <a href="tel:09153696949" style="
-      background:#ffcc00; color:#000; padding:8px 14px; border-radius:8px; font-weight:600;
-      display:flex; align-items:center; gap:6px;">
-      <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" style="width:18px;" alt="تماس">
-      تماس
-    </a>
-
-    <!-- واتساپ -->
-    <a href="https://wa.me/989153696949" style="
-      background:#25D366; color:#000; padding:8px 14px; border-radius:8px; font-weight:600;
-      display:flex; align-items:center; gap:6px;">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" style="width:18px;" alt="واتساپ">
-      واتساپ
-    </a>
-
-    <!-- اینستاگرام -->
-    <a href="https://www.instagram.com/Pamchal_garden_hall/" style="
-      background:#d62976; color:#fff; padding:8px 14px; border-radius:8px; font-weight:600;
-      display:flex; align-items:center; gap:6px;">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" style="width:18px;" alt="اینستاگرام">
-      اینستاگرام
-    </a>
-
-    <!-- دکمه مکان‌یاب -->
-    <div class="location-wrapper">
-
-      <a onclick="toggleLocationMenu()" style="
-        background:#4CAF50; color:#fff; padding:8px 14px; border-radius:8px; font-weight:600;
-        display:flex; align-items:center; gap:6px; cursor:pointer;">
-        <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" style="width:18px;" alt="مکان‌یاب">
-        آدرس و مکان‌یاب
+      <a href="tel:09153696949" style="background:#ffcc00; color:#000;">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" style="width:18px;">
+        تماس
       </a>
 
-      <div id="locationMenu" class="location-menu">
-        <a href="https://www.google.com/maps/search/?api=1&query=36.41394246164471,59.39042164504815" target="_blank">گوگل‌مپ</a>
-        <a href="https://nshn.ir/44_b10Qp5JLVH2" target="_blank">نشان</a>
+      <a href="https://wa.me/989153696949" style="background:#25D366; color:#000;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" style="width:18px;">
+        واتساپ
+      </a>
+
+      <a href="https://www.instagram.com/Pamchal_garden_hall/" style="background:#d62976; color:#fff;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" style="width:18px;">
+        اینستاگرام
+      </a>
+
+      <div class="location-wrapper">
+        <a onclick="toggleLocationMenu()" style="background:#4CAF50; color:#fff; cursor:pointer;">
+          <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" style="width:18px;">
+          آدرس و مکان‌یاب
+        </a>
+
+        <div id="locationMenu" class="location-menu">
+          <a href="https://www.google.com/maps/search/?api=1&query=36.41394246164471,59.39042164504815" target="_blank">گوگل‌مپ</a>
+          <a href="https://nshn.ir/44_b10Qp5JLVH2" target="_blank">نشان</a>
+        </div>
       </div>
 
     </div>
-
   </div>
 
-  <div class="page">
-
-    <!-- لوگو -->
-    <div style="
-      text-align:center;
-      margin-bottom:20px;
-      padding:18px 0;
-      background: rgba(255,255,255,0.04);
-      border-radius:18px;
-      border: 1px solid rgba(212,175,55,0.25);
-      box-shadow: 0 0 18px rgba(212,175,55,0.25);
-      animation: fadeIn 1s ease-out;
-    ">
-      <img src="2.png" alt="لوگو" style="
+  <!-- لوگو در کادر سلطنتی -->
+  <div class="royal-box">
+    <div style="text-align:center; animation: fadeIn 1s;">
+      <img src="2.png" style="
         width:130px;
         filter: drop-shadow(0 0 6px rgba(212,175,55,0.6))
                 drop-shadow(0 0 12px rgba(212,175,55,0.35));
         animation: floatLogo 3s ease-in-out infinite;
-      " />
+      ">
     </div>
+  </div>
 
+  <!-- عنوان قیمت منوها -->
+  <div class="royal-box">
+  
     <h1>قیمت منوهای باغتالار پامچال💰</h1>
 
   </div>
