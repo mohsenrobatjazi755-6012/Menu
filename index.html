@@ -963,6 +963,68 @@ body{background:radial-gradient(ellipse at 85% 0%,#e7eee7 0,transparent 34%),var
  .pamchal-menu-intro p{font-size:10px!important;line-height:1.7!important;margin:3px auto 7px!important}
 }
 
+
+/* Compact business-card hero: final override */
+.pamchal-hero{
+  width: min(920px, calc(100% - 28px)) !important;
+  min-height: 0 !important;
+  height: auto !important;
+  margin: 14px auto 24px !important;
+  padding: 18px 24px !important;
+  grid-template-columns: minmax(0,1fr) 170px !important;
+  gap: 20px !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 28px rgba(7,30,24,.13) !important;
+}
+.pamchal-hero:before{display:none !important}
+.pamchal-hero .hero-copy h1{
+  font-size: clamp(19px,2.5vw,27px) !important;
+  line-height: 1.45 !important;
+  margin: 0 0 6px !important;
+}
+.pamchal-hero .eyebrow{font-size:9px !important;margin-bottom:5px !important}
+.pamchal-hero .hero-copy p{
+  font-size:12px !important;
+  line-height:1.8 !important;
+  margin:5px 0 !important;
+}
+.pamchal-hero .hero-actions{gap:7px !important;margin:10px 0 7px !important}
+.pamchal-hero .hero-actions a{
+  flex:0 0 auto !important;
+  padding:8px 12px !important;
+  font-size:11px !important;
+}
+.pamchal-hero .hero-facts{font-size:10px !important;gap:7px !important}
+.pamchal-hero .hero-photo{width:150px !important;max-width:150px !important}
+.pamchal-hero .hero-photo-frame{
+  height:145px !important;
+  padding:4px !important;
+  border-radius:14px !important;
+  box-shadow:none !important;
+}
+.pamchal-hero .hero-photo-frame img{border-radius:10px !important;object-fit:cover !important}
+.pamchal-hero .photo-caption,.pamchal-hero .hero-stamp{display:none !important}
+@media(max-width:760px){
+  .pamchal-hero{
+    width:calc(100% - 20px) !important;
+    min-height:0 !important;
+    margin:10px auto 18px !important;
+    padding:12px !important;
+    grid-template-columns:minmax(0,1fr) 92px !important;
+    gap:9px !important;
+    border-radius:14px !important;
+  }
+  .pamchal-hero .hero-copy h1{font-size:16px !important;line-height:1.55 !important;margin:0 0 4px !important}
+  .pamchal-hero .hero-copy p{font-size:10px !important;line-height:1.65 !important;margin:3px 0 !important}
+  .pamchal-hero .eyebrow{font-size:8px !important;letter-spacing:1px !important;margin-bottom:3px !important}
+  .pamchal-hero .hero-actions{gap:5px !important;margin:7px 0 0 !important}
+  .pamchal-hero .hero-actions a{font-size:9px !important;padding:6px 8px !important;border-radius:20px !important}
+  .pamchal-hero .hero-photo{width:88px !important;max-width:88px !important}
+  .pamchal-hero .hero-photo-frame{height:100px !important;padding:3px !important;border-radius:10px !important}
+  .pamchal-hero .hero-photo-frame img{border-radius:7px !important}
+  .pamchal-hero .hero-facts{display:none !important}
+}
+
 </style>
 
   <link rel="stylesheet" href="/pamchal-signature.css?v=20261118-signature">
