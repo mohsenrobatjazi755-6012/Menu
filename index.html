@@ -391,10 +391,99 @@ footer {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
 
+
+/* PAMCHAL premium editorial landing page */
+.pamchal-site{max-width:1180px;margin:0 auto;padding:0 18px;color:#20342c}
+.pamchal-hero{min-height:590px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:44px;padding:56px 5.5%;margin:12px auto 58px;background:linear-gradient(125deg,#082f25,#0d4937 58%,#153d30);border:1px solid #c8a96b;border-radius:30px;box-shadow:0 28px 70px #071e1833;overflow:hidden;position:relative}
+.pamchal-hero:before{content:"";position:absolute;width:430px;height:430px;border:1px solid #d9bd7b44;border-radius:50%;left:-180px;top:-180px}
+.hero-copy{position:relative;z-index:2;color:#fff}
+.eyebrow{display:block;color:#b99652;font-size:11px;font-weight:800;letter-spacing:2.8px;margin-bottom:14px}
+.hero-copy h1{font-size:clamp(36px,5vw,60px);line-height:1.5;text-align:right;color:#fff;margin:0 0 16px;text-shadow:none}
+.hero-copy h1 em{font-style:normal;color:#e5ca8d}
+.hero-copy p{font-size:16px;line-height:2.2;color:#e5e9e4;max-width:540px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+.hero-actions a,.instagram-cta{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border-radius:40px;background:#d9bd7b;color:#172c22;text-decoration:none;font-weight:900;transition:.2s}
+.hero-actions a:hover,.instagram-cta:hover{transform:translateY(-3px);filter:brightness(1.06)}
+.hero-actions .ghost{background:transparent;border:1px solid #d9bd7b;color:#f3e5c4}
+.hero-facts{display:flex;gap:13px;align-items:center;flex-wrap:wrap;color:#d9dfd9;font-size:12px}
+.hero-facts i{width:4px;height:4px;background:#d9bd7b;border-radius:50%}
+.hero-photo{position:relative;max-width:440px;width:100%;justify-self:center}
+.hero-photo-frame{height:450px;padding:10px;border:1px solid #d9bd7b;border-radius:220px 220px 24px 24px;background:#ffffff14;box-shadow:0 20px 55px #0005;overflow:hidden}
+.hero-photo-frame img{width:100%;height:100%;object-fit:cover;border-radius:210px 210px 17px 17px;display:block}
+.photo-caption{position:absolute;bottom:28px;right:28px;left:28px;text-align:center;background:#082f25dd;color:#f2dfb3;padding:12px;border-radius:30px;font-weight:700}
+.hero-stamp{position:absolute;bottom:34px;left:-22px;width:84px;height:84px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#d9bd7b;color:#16372a;font-family:Georgia,serif;font-size:34px;box-shadow:0 8px 25px #0003}
+.hero-stamp small{font:700 8px Arial;letter-spacing:1px}
+.pamchal-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:20px 5% 52px}
+.pamchal-intro h2,.section-heading h2,.pamchal-menu-intro h2{font-size:clamp(25px,3vw,38px);color:#123e30;margin:0;text-align:right}
+.pamchal-intro p,.section-heading p,.pamchal-menu-intro p{color:#68756d;line-height:2;font-size:15px}
+.pamchal-gallery{padding:48px 4%;margin:10px auto 52px;background:#fff;border:1px solid #e5dcc8;border-radius:28px;box-shadow:0 18px 55px #1b33220c}
+.section-heading{text-align:center;margin-bottom:30px}
+.section-heading h2{text-align:center}
+.gallery-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}
+.gallery-tile{position:relative;display:block;overflow:hidden;border-radius:17px;background:#0b3c2d}
+.gallery-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.gallery-tile:hover img{transform:scale(1.06)}
+.gallery-tile:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#061d17c9)}
+.gallery-tile span{position:absolute;z-index:1;bottom:15px;right:18px;color:#fff;font-weight:800;font-size:14px}
+.tile-large{grid-row:span 2}
+.gallery-note{text-align:center;color:#7b827d;margin:25px 0 10px;font-size:13px}
+.instagram-cta{display:flex;width:max-content;max-width:100%;margin:0 auto;background:#103e30;color:#f1dfb7}
+.pamchal-menu-intro{text-align:center;padding:25px 15px 10px}
+.pamchal-menu-intro h2{text-align:center}
+.pamchal-menu-intro p{margin:6px auto 22px}
+body{background:#f5f2e9 !important;color:#24352d !important}
+body > .royal-box:first-child{max-width:1080px;background:linear-gradient(130deg,#082f25,#0e503c)!important;border:1px solid #c8a96b!important;border-radius:22px!important}
+.royal-box{background:#fff!important;color:#26352e!important;border:1px solid #e2d6bd!important;box-shadow:0 10px 30px #1b33220d!important;border-radius:18px!important}
+.menu-line a{color:#174c38!important}.menu-line span,.menu-line span a{color:#a27b37!important}
+h2,.menu-title{color:#123e30!important}.label{color:#236148!important}
+footer{background:#092f25!important;border:1px solid #c8a96b!important;border-radius:14px!important;color:#f3e5c4!important}
+@media(max-width:760px){.pamchal-site{padding:0 8px}.pamchal-hero{grid-template-columns:1fr;gap:25px;padding:35px 22px;margin:8px auto 35px;border-radius:22px}.hero-copy h1{font-size:37px}.hero-photo{max-width:330px}.hero-photo-frame{height:350px}.hero-stamp{left:-8px;width:68px;height:68px;font-size:27px}.pamchal-intro{grid-template-columns:1fr;gap:5px;padding:10px 4% 30px}.pamchal-gallery{padding:30px 14px;border-radius:20px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.tile-large{grid-row:span 2}.gallery-tile:last-child{grid-column:span 2}.hero-actions a{flex:1 1 100%}.pamchal-menu-intro{padding-top:8px}}
+@media(max-width:390px){.gallery-grid{grid-template-rows:150px 150px 150px}.hero-copy h1{font-size:31px}}
+
   </style>
 </head>
 
 <body>
+
+  <main class="pamchal-site">
+    <section class="pamchal-hero">
+      <div class="hero-copy">
+        <span class="eyebrow">PAMCHAL GARDEN HALL · MASHHAD</span>
+        <h1>لحظه‌هایی باشکوه،<br><em>خاطره‌هایی ماندگار</em></h1>
+        <p>باغ‌تالار پامچال؛ فضایی چشم‌نواز برای جشن آغاز زندگی مشترک شما، با شکوه معماری، نورپردازی و پذیرایی حرفه‌ای.</p>
+        <div class="hero-actions">
+          <a href="tel:+989153696949">رزرو و مشاوره تلفنی</a>
+          <a class="ghost" href="#pamchal-gallery">تماشای تصاویر مجموعه</a>
+        </div>
+        <div class="hero-facts"><span>از سال ۱۳۹۱</span><i></i><span>مشهد · جاده شاندیز</span><i></i><span>باغ‌تالار پامچال</span></div>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-photo-frame">
+          <img src="https://www.instagram.com/p/DcDzpSDBvS-/media/?size=l" alt="ورودی و فضای باغ‌تالار پامچال" loading="eager">
+          <span class="photo-caption">به پامچال خوش آمدید</span>
+        </div>
+        <div class="hero-stamp">P<br><small>PAMCHAL</small></div>
+      </div>
+    </section>
+    <section class="pamchal-intro">
+      <div><span class="eyebrow">A BEAUTIFUL BEGINNING</span><h2>برای شبی که فقط یک‌بار اتفاق می‌افتد</h2></div>
+      <p>از لحظه ورود تا آخرین قاب جشن، جزئیات مراسم شما اهمیت دارد. تصاویر مجموعه را ببینید و برای آشنایی با منوهای پذیرایی، پایین‌تر بروید.</p>
+    </section>
+    <section class="pamchal-gallery" id="pamchal-gallery">
+      <div class="section-heading"><span class="eyebrow">THE PAMCHAL EXPERIENCE</span><h2>گوشه‌ای از زیبایی پامچال</h2><p>فضای ورودی، جایگاه مراسم، معماری و پذیرایی مجموعه</p></div>
+      <div class="gallery-grid">
+        <a class="gallery-tile tile-large" href="https://www.instagram.com/p/DcDzpSDBvS-/" target="_blank" rel="noopener"><img src="https://www.instagram.com/p/DcDzpSDBvS-/media/?size=l" alt="ورودی باغ‌تالار پامچال" loading="lazy"><span>ورودی باشکوه مجموعه</span></a>
+        <a class="gallery-tile" href="https://www.instagram.com/p/DY5Qgrujl0Z/" target="_blank" rel="noopener"><img src="https://www.instagram.com/p/DY5Qgrujl0Z/media/?size=l" alt="فضای مراسم پامچال" loading="lazy"><span>شکوه لحظه‌های مراسم</span></a>
+        <a class="gallery-tile" href="https://www.instagram.com/reel/DZPlKUcIYWv/" target="_blank" rel="noopener"><img src="https://www.instagram.com/reel/DZPlKUcIYWv/media/?size=l" alt="جایگاه و نورپردازی پامچال" loading="lazy"><span>جایگاه و نورپردازی</span></a>
+        <a class="gallery-tile" href="https://www.instagram.com/reel/DZNtlADu7qK/" target="_blank" rel="noopener"><img src="https://www.instagram.com/reel/DZNtlADu7qK/media/?size=l" alt="فضای باغ‌تالار پامچال" loading="lazy"><span>فضای باغ در شب</span></a>
+        <a class="gallery-tile" href="https://www.instagram.com/reel/Db8_LYuu_IX/" target="_blank" rel="noopener"><img src="https://www.instagram.com/reel/Db8_LYuu_IX/media/?size=l" alt="مراسم در باغ‌تالار پامچال" loading="lazy"><span>جشن‌های به‌یادماندنی</span></a>
+      </div>
+      <p class="gallery-note">برای مشاهده تصاویر و ویدئوهای بیشتر، صفحه رسمی اینستاگرام پامچال را ببینید.</p>
+      <a class="instagram-cta" href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener">مشاهده صفحه رسمی اینستاگرام</a>
+    </section>
+    <section class="pamchal-menu-intro"><span class="eyebrow">WEDDING MENUS</span><h2>منوهای پذیرایی پامچال</h2><p>پکیج‌های پذیرایی و قیمت‌ها را بررسی کنید و برای انتخاب مناسب مراسم خود تماس بگیرید.</p></section>
+  </main>
+
 
   <!-- هدر در کادر سلطنتی -->
   <div class="royal-box">
@@ -462,6 +551,7 @@ footer {
 
 
     <!-- لیست قیمت منوها -->
+
 <div class="royal-box">
   <div class="menu-line">
     <a href="#menu1" style="color:#d4af37; text-decoration:none; font-weight:700;font-size:32px;">منو ۱ دیس‌ پرس</a>
