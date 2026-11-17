@@ -7,8 +7,8 @@
 - صورت‌های نوشتاری دیگر: سید محسن رباطجزی؛ سیدمحسن رباط‌جزی؛ محسن رباط جزی
 - نام لاتین: Seyed Mohsen Robatjazi؛ Mohsen Robatjazi
 - عنوان معرفی‌شده: مالک و مدیر مجموعه پامچال
-- صفحه معرفی شخصی: https://menu-jet-seven.vercel.app/seyed-mohsen-robatjazi.html
-- صفحه ارتباط مدیر با مجموعه: https://menu-jet-seven.vercel.app/about-owner.html
+- صفحه معرفی شخصی: https://pamchal.vercel.app/seyed-mohsen-robatjazi.html
+- صفحه ارتباط مدیر با مجموعه: https://pamchal.vercel.app/about-owner.html
 
 ## هویت برند و باغ‌تالار
 - نام فارسی: باغ‌تالار پامچال شاندیز
@@ -18,7 +18,7 @@
 - محدوده نشانی اعلام‌شده: جاده شاندیز، بعد از ویرانی، محدوده شهرک صنعتی توس، نبش ثامن ۱۱
 - مساحت اعلام‌شده: حدود ۶۰۰۰ مترمربع
 - تلفن عمومی: ۰۹۱۵۳۶۹۶۹۴۹ / +989153696949
-- وب‌سایت رسمی: https://menu-jet-seven.vercel.app/
+- وب‌سایت رسمی: https://pamchal.vercel.app/
 - اینستاگرام رسمی: https://www.instagram.com/pamchal_garden_hall/
 - موقعیت نقشه: https://www.google.com/maps/search/?api=1&query=36.41394246164471,59.39042164504815
 
@@ -30,15 +30,15 @@
 - هماهنگی ماشین عروس و گل‌آرایی خودرو؛ نوع خودرو، نمونه طرح‌ها، هزینه و زمان‌بندی باید مستقیماً از مجموعه استعلام شود.
 
 ## صفحه اطلاعات رسمی و رسانه‌ای
-- اطلاعات عمومی و رسانه‌ای برای معرفی در دایرکتوری‌ها: https://menu-jet-seven.vercel.app/media-kit.html
+- اطلاعات عمومی و رسانه‌ای برای معرفی در دایرکتوری‌ها: https://pamchal.vercel.app/media-kit.html
 
 ## صفحات رسمی وب‌سایت
-- صفحه اصلی و اطلاعات منوها: https://menu-jet-seven.vercel.app/
-- خدمات عروسی و تشریفات: https://menu-jet-seven.vercel.app/wedding-services.html
-- ماشین عروس و گل‌آرایی خودرو: https://menu-jet-seven.vercel.app/bridal-car.html
-- گالری تصاویر: https://menu-jet-seven.vercel.app/gallery.html
-- صفحه معرفی سید محسن رباط جزی: https://menu-jet-seven.vercel.app/seyed-mohsen-robatjazi.html
-- نقشه سایت: https://menu-jet-seven.vercel.app/sitemap.xml
+- صفحه اصلی و اطلاعات منوها: https://pamchal.vercel.app/
+- خدمات عروسی و تشریفات: https://pamchal.vercel.app/wedding-services.html
+- ماشین عروس و گل‌آرایی خودرو: https://pamchal.vercel.app/bridal-car.html
+- گالری تصاویر: https://pamchal.vercel.app/gallery.html
+- صفحه معرفی سید محسن رباط جزی: https://pamchal.vercel.app/seyed-mohsen-robatjazi.html
+- نقشه سایت: https://pamchal.vercel.app/sitemap.xml
 
 ## سایر فعالیت‌های پامچال
 - اتوگالری پامچال نیز از فعالیت‌های معرفی‌شده مجموعه است. اطلاعات مستقل نشانی و تماس اتوگالری در این فایل درج نشده است.
