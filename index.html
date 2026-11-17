@@ -730,7 +730,90 @@ a,button{touch-action:manipulation}
  .pamchal-reveal{opacity:1!important;transform:none!important}
 }
 
-  </style>
+  
+/* STRUCTURE 2.0 — compact, clear, mobile-first */
+body{background:#f5f6f3!important;color:#17251e!important}
+.pamchal-topbar{position:sticky!important;top:0!important;min-height:58px!important;padding:8px clamp(14px,4vw,42px)!important;background:rgba(8,43,31,.96)!important}
+.pamchal-site{width:100%!important;max-width:1180px!important;padding:0 clamp(14px,3vw,28px)!important}
+.pamchal-hero{min-height:0!important;margin:18px auto 14px!important;padding:clamp(18px,3vw,34px)!important;gap:24px!important;border-radius:14px!important}
+.hero-copy h1{font-size:clamp(28px,4vw,46px)!important;line-height:1.45!important;margin:8px 0 10px!important}
+.hero-copy p{font-size:14px!important;line-height:1.9!important;margin:0!important}
+.hero-photo-frame{height:clamp(210px,27vw,330px)!important}
+.hero-actions{margin:14px 0!important;gap:8px!important}
+.hero-actions a{padding:10px 15px!important;min-height:42px!important}
+.hero-facts{font-size:11px!important;margin-top:10px!important}
+.pamchal-menu-intro{max-width:1180px!important;margin:18px auto 8px!important;padding:12px 4px!important;text-align:right!important}
+.pamchal-menu-intro h2{font-size:clamp(23px,3vw,32px)!important;margin:4px 0!important}
+.pamchal-menu-intro p{margin:4px 0!important;font-size:13px!important}
+.menu-quick{max-width:1180px;margin:0 auto 30px;padding:18px clamp(14px,2vw,24px);background:#fff;border:1px solid #e4e8e2;border-radius:14px;box-shadow:0 8px 30px rgba(18,45,31,.05)}
+.menu-quick-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}
+.menu-quick-head h2{margin:3px 0;font-size:clamp(22px,3vw,30px);color:#153c2c}
+.menu-quick-head p{margin:0;color:#68756c;font-size:13px}
+.menu-quick-head>a{color:#245a42;text-decoration:none;font-weight:800;font-size:13px;white-space:nowrap}
+.menu-quick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.menu-quick-card{display:flex;flex-direction:column;gap:7px;min-width:0;padding:15px;border:1px solid #e6e9e4;border-radius:10px;text-decoration:none;background:#fbfcfa;transition:border-color .2s,transform .2s}
+.menu-quick-card:hover{border-color:#b89b62;transform:translateY(-2px)}
+.menu-quick-card>span{font-size:14px;font-weight:800;color:#20372b}
+.menu-quick-card strong{font-size:21px;line-height:1.3;color:#174b35}
+.menu-quick-card small{font-size:10px;font-weight:500;color:#7b857d;margin-right:5px}
+.menu-quick-card i{font-size:11px;font-style:normal;color:#8a7042}
+.menu-kind-links{display:flex;gap:8px;margin-top:12px}
+.menu-kind-links a{padding:8px 12px;border-radius:7px;background:#f0f4ef;color:#315743;text-decoration:none;font-size:12px;font-weight:700}
+.contact-strip{max-width:1180px;margin:0 auto 18px;padding:0 18px}
+.contact-strip .contact-buttons{display:flex;justify-content:flex-start;gap:8px;flex-wrap:wrap}
+.contact-strip .btn{min-height:40px;padding:8px 14px!important;border-radius:8px!important;font-size:13px!important}
+.menu-details-wrap{max-width:1180px;margin:0 auto 40px;padding:0 18px}
+.menu-details-heading{padding:8px 4px 12px}
+.menu-details-heading h2{font-size:clamp(23px,3vw,31px);margin:4px 0;color:#153c2c}
+.menu-details-heading p{font-size:13px;color:#68756c;margin:0}
+.menu-details-wrap>.royal-box{max-width:none!important;width:100%!important;margin:12px 0!important;padding:clamp(12px,2vw,22px)!important;background:#fff!important;border:1px solid #e5e9e3!important;box-shadow:0 5px 20px rgba(20,40,25,.04)!important}
+.menu-details-wrap .menu-card>.royal-box{background:#fbfcfa!important;border:1px solid #e6e9e4!important;box-shadow:none!important}
+.menu-details-wrap .menu-card{margin:0 0 12px!important}
+.menu-details-wrap .menu-title{color:#173f2d!important}
+.menu-details-wrap .menu-price{background:#edf3ed!important;color:#22583e!important}
+.menu-details-wrap .menu-card li{color:#34453a!important}
+.menu-details-wrap .label{color:#876c3d!important}
+.pamchal-intro,.pamchal-signature,.pamchal-gallery{max-width:1180px!important;margin:32px auto!important}
+.pamchal-intro{padding:20px!important}
+.pamchal-gallery{padding:clamp(16px,3vw,28px)!important}
+.pamchal-reveal{opacity:1!important;transform:none!important}
+@media(max-width:700px){
+ .pamchal-topbar{min-height:52px!important}
+ .pamchal-nav{gap:8px!important}
+ .pamchal-nav a:not(.pamchal-top-cta){display:inline-flex!important;font-size:10px!important}
+ .pamchal-nav a[href="#pamchal-faq"]{display:none!important}
+ .pamchal-top-cta{padding:8px 10px!important;font-size:11px!important}
+ .pamchal-site{padding:0 12px!important}
+ .pamchal-hero{display:flex!important;flex-direction:column!important;margin:12px auto!important;padding:16px!important;gap:14px!important}
+ .hero-copy h1{font-size:29px!important}
+ .hero-copy p{font-size:13px!important;line-height:1.85!important}
+ .hero-photo-frame{height:205px!important}
+ .hero-actions{display:grid!important;grid-template-columns:1fr 1fr!important}
+ .hero-actions a{font-size:11px!important;text-align:center!important;padding:10px 7px!important}
+ .hero-facts{flex-wrap:wrap!important;gap:6px!important}
+ .pamchal-menu-intro{margin:10px 12px 5px!important;padding:8px 0!important}
+ .menu-quick{margin:0 12px 20px!important;padding:14px 12px!important;border-radius:11px!important}
+ .menu-quick-head{align-items:flex-start!important}
+ .menu-quick-head h2{font-size:23px!important}
+ .menu-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+ .menu-quick-card{padding:11px 10px!important;gap:5px!important}
+ .menu-quick-card>span{font-size:12px!important}
+ .menu-quick-card strong{font-size:18px!important}
+ .menu-quick-card i{font-size:10px!important}
+ .menu-kind-links a{font-size:11px!important;padding:8px 9px!important}
+ .contact-strip{padding:0 12px!important}
+ .contact-strip .contact-buttons{justify-content:center!important}
+ .contact-strip .btn{flex:1 1 calc(50% - 8px)!important;justify-content:center!important}
+ .menu-details-wrap{padding:0 12px!important}
+ .menu-details-wrap>.royal-box{padding:12px 9px!important;margin:10px 0!important}
+ .menu-details-wrap .menu-card>.royal-box{padding:14px 12px!important}
+ .menu-details-heading{padding:6px 2px 10px!important}
+ .pamchal-intro,.pamchal-signature,.pamchal-gallery{margin:24px 12px!important}
+ .pamchal-gallery{padding:16px 10px!important}
+ .gallery-grid{gap:7px!important}
+}
+
+</style>
 
   <link rel="stylesheet" href="/pamchal-signature.css?v=20261118-signature">
   <link rel="stylesheet" href="/pamchal-editorial.css?v=20261118-contrast2">
@@ -752,7 +835,7 @@ a,button{touch-action:manipulation}
 <nav class="pamchal-topbar" aria-label="ناوبری اصلی"><a class="pamchal-brand" href="#">PAMCHAL <span style="font-size:11px;font-weight:600;color:#e8dfca">باغ‌تالار پامچال</span></a><div class="pamchal-nav"><a href="#pamchal-gallery">گالری تصاویر</a><a href="#menu1">منوها و قیمت‌ها</a><a href="#pamchal-faq">پرسش‌های متداول</a><a class="pamchal-top-cta" href="tel:+989153696949">مشاوره و رزرو</a></div></nav>
 
   <main class="pamchal-site">
-    <section class="pamchal-hero">
+<section class="pamchal-hero">
       <div class="hero-copy">
         <span class="eyebrow">PAMCHAL GARDEN HALL · MASHHAD</span>
         <h1>یک شب برای همیشه،<br><em>در باغی به نام پامچال</em></h1>
@@ -771,60 +854,15 @@ a,button{touch-action:manipulation}
         <div class="hero-stamp">P<br><small>PAMCHAL</small></div>
       </div>
     </section>
-    <section class="pamchal-intro">
-      <div><span class="eyebrow">A BEAUTIFUL BEGINNING</span><h2>شکوه یک شب؛ امضای یک خاطره</h2></div>
-      <p>پامچال را با عجله تماشا نکنید؛ از ورودی و فضای باغ تا جایگاه و پذیرایی، هر قاب بخشی از حال‌وهوای شبی است که قرار است سال‌ها درباره‌اش حرف بزنید.</p>
-    </section>
-    
-<section class="pamchal-signature" aria-label="درباره باغ‌تالار پامچال">
-  <div class="signature-kicker">THE ART OF CELEBRATION</div>
-  <div class="signature-main"><div class="signature-number"><strong>۶۰۰۰</strong><span>متر فضای مجموعه</span></div><div class="signature-copy"><span class="eyebrow">MORE THAN A VENUE</span><h2>وسعتی برای خیال‌پردازی؛<br><em>جزئیاتی برای به‌یادماندن</em></h2><p>پامچال فقط یک نشانی برای برگزاری مراسم نیست؛ فضایی‌ست برای کنار هم نشستن عزیزان، ثبت قاب‌های زیبا و ساختن خاطره‌ای که ارزش دوباره دیدن دارد.</p></div></div>
-</section>
-<section class="pamchal-gallery" id="pamchal-gallery">
-<div class="section-heading"><span class="eyebrow">A PLACE TO CELEBRATE</span><h2>پامچال را از نزدیک تماشا کنید</h2><p>گوشه‌هایی از فضای واقعی مجموعه؛ هر تصویر، روایتی از میزبانی پامچال است.</p></div>
-<div class="gallery-grid">
-<a class="gallery-tile tile-large" href="images/pamchal-01.webp?v=20261118" target="_blank"><img src="images/pamchal-01.webp?v=20261118" alt="ورودی پلکانی و نورپردازی باغ‌تالار پامچال" loading="lazy"><span>ورودی و نورپردازی مجموعه</span></a>
-<a class="gallery-tile" href="images/pamchal-02.webp?v=20261118" target="_blank"><img src="images/pamchal-02.webp?v=20261118" alt="جایگاه گل‌آرایی باغ‌تالار پامچال" loading="lazy"><span>جایگاه و گل‌آرایی</span></a>
-<a class="gallery-tile" href="images/pamchal-03.webp?v=20261118" target="_blank"><img src="images/pamchal-03.webp?v=20261118" alt="مسیر ورودی مراسم در باغ‌تالار پامچال" loading="lazy"><span>مسیر ورودی مراسم</span></a>
-<a class="gallery-tile" href="images/pamchal-04.webp?v=20261118" target="_blank"><img src="images/pamchal-04.webp?v=20261118" alt="چیدمان میز پذیرایی باغ‌تالار پامچال" loading="lazy"><span>چیدمان میز پذیرایی</span></a>
-<a class="gallery-tile" href="images/pamchal-05.webp?v=20261118" target="_blank"><img src="images/pamchal-05.webp?v=20261118" alt="فضای عقد و گل‌آرایی باغ‌تالار پامچال" loading="lazy"><span>فضای عقد و گل‌آرایی</span></a>
-</div>
-<p class="gallery-note">برای مشاهده هر تصویر در اندازه بزرگ‌تر، روی آن بزنید.</p>
-<a class="instagram-cta" href="/gallery.html">مشاهده همه تصاویر باغ پامچال</a>
-<a class="instagram-cta" href="/wedding-services.html">خدمات عروسی، عقد، گل‌آرایی و تشریفات پامچال</a>
-<a class="instagram-cta" href="/media-kit.html">اطلاعات رسمی و رسانه‌ای پامچال</a>
-<a class="instagram-cta" href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener">مشاهده صفحه رسمی اینستاگرام</a>
-</section>
     <section class="pamchal-menu-intro"><span class="eyebrow">WEDDING MENUS</span><h2>میزبان سلیقه‌های متفاوت</h2><p>از منوی پرسی تا سلف‌سرویس؛ ترکیب پذیرایی و خدمات را بررسی کنید و برای انتخاب متناسب با مراسم‌تان مشاوره بگیرید.</p></section>
-  </main>
-
-
-  <!-- هدر در کادر سلطنتی -->
-  <div class="royal-box">
-    <div class="header">
-      
-  <!-- لوگو در کادر سلطنتی -->
-    <div style="text-align:center; animation: fadeIn 1s;">
-      <img src="2.png" style="
-        width:130px;
-        filter: drop-shadow(0 0 6px rgba(212,175,55,0.6))
-                drop-shadow(0 0 12px rgba(212,175,55,0.35));
-        animation: floatLogo 3s ease-in-out infinite;
-      ">
-    </div>
-
-  <!-- عنوان قیمت منوها -->
-  
-  
-    <h1>باغ‌تالار پامچال مشهد | باغ عروسی و تشریفات مجالس</h1>
-    <p style="max-width:850px;margin:12px auto 22px;text-align:center;line-height:2;color:#f5f5f5">
-      باغ‌تالار پامچال در مشهد، فضایی برای برگزاری مراسم عروسی و مجالس است.
-    </p>
-    <h2 style="text-align:center;color:#ffd86b">قیمت و منوهای پذیرایی باغ‌تالار پامچال</h2>
-
-  </div>
-
-‏<div class="contact-buttons">
+  <section class="menu-quick" id="menu-navigation"><div class="menu-quick-head"><div><span class="eyebrow">MENU & PRICING</span><h2>منوها و قیمت‌ها</h2><p>انتخاب کنید تا جزئیات هر منو را ببینید.</p></div><a href="#menu-details">همه جزئیات ↓</a></div><div class="menu-quick-grid"><a class="menu-quick-card" href="#menu1"><span>منوی ۱ · دیس‌پرس</span><strong>۱,۴۰۰,۰۰۰<small>تومان / نفر</small></strong><i>مشاهده جزئیات ←</i></a>
+<a class="menu-quick-card" href="#menu2"><span>منوی ۲ · دیس‌پرس</span><strong>۱,۸۰۰,۰۰۰<small>تومان / نفر</small></strong><i>مشاهده جزئیات ←</i></a>
+<a class="menu-quick-card" href="#menu3"><span>منوی ۳ · دیس‌پرس</span><strong>۲,۵۰۰,۰۰۰<small>تومان / نفر</small></strong><i>مشاهده جزئیات ←</i></a>
+<a class="menu-quick-card" href="#menu4"><span>منوی ۴ · سلف‌سرویس</span><strong>۳,۵۰۰,۰۰۰<small>تومان / نفر</small></strong><i>مشاهده جزئیات ←</i></a>
+<a class="menu-quick-card" href="#menu5"><span>منوی ۵ · سلف‌سرویس</span><strong>۴,۵۰۰,۰۰۰<small>تومان / نفر</small></strong><i>مشاهده جزئیات ←</i></a>
+<a class="menu-quick-card" href="#menu6"><span>منوی ۶ · سلف‌سرویس</span><strong>۵,۵۰۰,۰۰۰<small>تومان / نفر</small></strong><i>مشاهده جزئیات ←</i></a></div><div class="menu-kind-links"><a href="#menu1">منوهای دیس‌پرس</a><a href="#menu4">منوهای سلف‌سرویس</a></div></section>
+</main>
+<section class="contact-strip"><div class="contact-buttons">
 
   <a href="tel:+989153696949" class="btn call">
     <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png">
@@ -853,62 +891,8 @@ a,button{touch-action:manipulation}
     </div>
   </div>
 
-</div>
-
-  <script>
-    function toggleLocationMenu() {
-      const menu = document.getElementById("locationMenu");
-      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-    }
-  </script>
- </div>
-
-
-    <!-- لیست قیمت منوها -->
-
-<div class="royal-box">
-  <div class="menu-line">
-    <a href="#menu1" style="color:#d4af37; text-decoration:none; font-weight:700;font-size:32px;">منو ۱ دیس‌ پرس</a>
-    <span>۱,۴۰۰,۰۰۰ تومان</span>
-  </div>
-</div>
-
-<div class="royal-box">
-  <div class="menu-line">
-    <a href="#menu2" style="color:#d4af37; text-decoration:none; font-weight:700;font-size:32px;">منو ۲ دیس‌ پرس</a>
-    <span>۱,۸۰۰,۰۰۰ تومان</span>
-  </div>
-</div>
-
-<div class="royal-box">
-  <div class="menu-line">
-    <a href="#menu3" style="color:#d4af37; text-decoration:none; font-weight:700;font-size:32px;">منو ۳ دیس‌ پرس</a>
-    <span>۲,۵۰۰,۰۰۰ تومان</span>
-  </div>
-</div>
-
-<div class="royal-box">
-  <div class="menu-line">
-    <a href="#menu4" style="color:#d4af37; text-decoration:none; font-weight:700;font-size:32px;">منو ۴ سلف سرویس</a>
-    <span>۳,۵۰۰,۰۰۰ تومان</span>
-  </div>
-</div>
-
-<div class="royal-box">
-  <div class="menu-line">
-    <a href="#menu5" style="color:#d4af37; text-decoration:none; font-weight:700;font-size:32px;">منو ۵ سلف سرویس</a>
-    <span>۴,۵۰۰,۰۰۰ تومان</span>
-  </div>
-</div>
-
-<div class="royal-box">
-  <div class="menu-line">
-    <a href="#menu6" style="color:#d4af37; text-decoration:none; font-weight:700;font-size:32px;">منو ۶ سلف سرویس</a>
-    <span>۵,۵۰۰,۰۰۰ تومان</span>
-  </div>
-</div>
-
-    <div class="divider"></div>
+</div></section>
+<section id="menu-details" class="menu-details-wrap"><div class="menu-details-heading"><span class="eyebrow">DETAILS & OPTIONS</span><h2>جزئیات منوهای پذیرایی</h2><p>ترکیب غذاها، عصرانه و خدمات هر منو را با هم مقایسه کنید.</p></div><div class="divider"></div>
       ‏<div class="royal-box">
 
     <h2>🍽 منوهای پرسی</h2>
@@ -1248,7 +1232,32 @@ a,button{touch-action:manipulation}
 
   </div>
 
-<section class="pamchal-trust" aria-label="ویژگی‌های مجموعه">
+</section>
+<section class="pamchal-intro">
+      <div><span class="eyebrow">A BEAUTIFUL BEGINNING</span><h2>شکوه یک شب؛ امضای یک خاطره</h2></div>
+      <p>پامچال را با عجله تماشا نکنید؛ از ورودی و فضای باغ تا جایگاه و پذیرایی، هر قاب بخشی از حال‌وهوای شبی است که قرار است سال‌ها درباره‌اش حرف بزنید.</p>
+    </section>
+    
+<section class="pamchal-signature" aria-label="درباره باغ‌تالار پامچال">
+  <div class="signature-kicker">THE ART OF CELEBRATION</div>
+  <div class="signature-main"><div class="signature-number"><strong>۶۰۰۰</strong><span>متر فضای مجموعه</span></div><div class="signature-copy"><span class="eyebrow">MORE THAN A VENUE</span><h2>وسعتی برای خیال‌پردازی؛<br><em>جزئیاتی برای به‌یادماندن</em></h2><p>پامچال فقط یک نشانی برای برگزاری مراسم نیست؛ فضایی‌ست برای کنار هم نشستن عزیزان، ثبت قاب‌های زیبا و ساختن خاطره‌ای که ارزش دوباره دیدن دارد.</p></div></div>
+</section>
+<section class="pamchal-gallery" id="pamchal-gallery">
+<div class="section-heading"><span class="eyebrow">A PLACE TO CELEBRATE</span><h2>پامچال را از نزدیک تماشا کنید</h2><p>گوشه‌هایی از فضای واقعی مجموعه؛ هر تصویر، روایتی از میزبانی پامچال است.</p></div>
+<div class="gallery-grid">
+<a class="gallery-tile tile-large" href="images/pamchal-01.webp?v=20261118" target="_blank"><img src="images/pamchal-01.webp?v=20261118" alt="ورودی پلکانی و نورپردازی باغ‌تالار پامچال" loading="lazy"><span>ورودی و نورپردازی مجموعه</span></a>
+<a class="gallery-tile" href="images/pamchal-02.webp?v=20261118" target="_blank"><img src="images/pamchal-02.webp?v=20261118" alt="جایگاه گل‌آرایی باغ‌تالار پامچال" loading="lazy"><span>جایگاه و گل‌آرایی</span></a>
+<a class="gallery-tile" href="images/pamchal-03.webp?v=20261118" target="_blank"><img src="images/pamchal-03.webp?v=20261118" alt="مسیر ورودی مراسم در باغ‌تالار پامچال" loading="lazy"><span>مسیر ورودی مراسم</span></a>
+<a class="gallery-tile" href="images/pamchal-04.webp?v=20261118" target="_blank"><img src="images/pamchal-04.webp?v=20261118" alt="چیدمان میز پذیرایی باغ‌تالار پامچال" loading="lazy"><span>چیدمان میز پذیرایی</span></a>
+<a class="gallery-tile" href="images/pamchal-05.webp?v=20261118" target="_blank"><img src="images/pamchal-05.webp?v=20261118" alt="فضای عقد و گل‌آرایی باغ‌تالار پامچال" loading="lazy"><span>فضای عقد و گل‌آرایی</span></a>
+</div>
+<p class="gallery-note">برای مشاهده هر تصویر در اندازه بزرگ‌تر، روی آن بزنید.</p>
+<a class="instagram-cta" href="/gallery.html">مشاهده همه تصاویر باغ پامچال</a>
+<a class="instagram-cta" href="/wedding-services.html">خدمات عروسی، عقد، گل‌آرایی و تشریفات پامچال</a>
+<a class="instagram-cta" href="/media-kit.html">اطلاعات رسمی و رسانه‌ای پامچال</a>
+<a class="instagram-cta" href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener">مشاهده صفحه رسمی اینستاگرام</a>
+</section>
+    <section class="pamchal-trust" aria-label="ویژگی‌های مجموعه">
 <article><strong>از سال ۱۳۹۱</strong><span>تجربه میزبانی از جشن‌ها و لحظه‌های به‌یادماندنی</span></article>
 <article><strong>باغ‌تالار پامچال</strong><span>مشهد، جاده شاندیز؛ فضایی برای جشن‌های باشکوه</span></article>
 <article><strong>منوهای متنوع پذیرایی</strong><span>بررسی جزئیات منوها و قیمت‌ها پیش از تماس</span></article>
@@ -1265,6 +1274,7 @@ a,button{touch-action:manipulation}
 <details><summary>چطور برای بازدید یا رزرو مراسم هماهنگ کنم؟</summary><p>از دکمه تماس استفاده کنید تا برای مشاوره، بازدید و بررسی تاریخ مراسم راهنمایی شوید.</p></details>
 <details><summary>باغ‌تالار پامچال کجا قرار دارد؟</summary><p>مشهد، جاده شاندیز، بعد از ویرانی، شهرک صنعتی توس، نبش ثامن ۱۱.</p></details>
 </section>
+
 <div class="pamchal-floating" aria-label="راه‌های ارتباطی سریع"><a class="call" href="tel:+989153696949" aria-label="تماس تلفنی">☎</a><a href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener" aria-label="اینستاگرام">◎</a></div>
 <script>
 (()=>{const els=document.querySelectorAll('.pamchal-hero,.pamchal-intro,.pamchal-gallery,.pamchal-menu-intro,.menu-card,.royal-box,.pamchal-trust article,.pamchal-cta-band,.pamchal-faq');els.forEach(el=>el.classList.add('pamchal-reveal'));if(!('IntersectionObserver'in window)){els.forEach(el=>el.classList.add('is-visible'));return;}const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.08});els.forEach(el=>io.observe(el));})();
