@@ -925,6 +925,44 @@ body{background:radial-gradient(ellipse at 85% 0%,#e7eee7 0,transparent 34%),var
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.menu-quick-card{transition:none!important}}
 
+
+/* Compact hero: short brand introduction, image is supporting content */
+.pamchal-hero{min-height:0!important;height:auto!important;grid-template-columns:minmax(0,1.15fr) minmax(190px,.65fr)!important;gap:24px!important;margin:18px auto 14px!important;padding:22px 28px!important;border-radius:22px!important}
+.hero-copy h1{font-size:clamp(26px,3.2vw,38px)!important;line-height:1.45!important;margin:0 0 8px!important}
+.hero-copy .eyebrow{margin-bottom:7px!important;font-size:9px!important}
+.hero-copy p{font-size:13px!important;line-height:1.85!important;margin:0!important;max-width:520px!important}
+.hero-actions{gap:8px!important;margin:13px 0 10px!important}
+.hero-actions a{padding:9px 14px!important;min-height:39px!important;font-size:12px!important}
+.hero-facts{font-size:10px!important;gap:8px!important}
+.hero-photo{max-width:270px!important;width:100%!important}
+.hero-photo-frame{height:155px!important;padding:5px!important;border-radius:17px!important}
+.hero-photo-frame img{border-radius:13px!important;object-fit:cover!important}
+.photo-caption{bottom:12px!important;right:12px!important;left:12px!important;padding:6px 9px!important;font-size:10px!important}
+.hero-stamp{width:54px!important;height:54px!important;bottom:-8px!important;left:-8px!important;font-size:22px!important}
+.hero-stamp small{font-size:6px!important}
+.pamchal-menu-intro{padding:12px 10px 5px!important;margin:12px auto 6px!important}
+.pamchal-menu-intro p{margin:4px auto 10px!important;font-size:12px!important;line-height:1.8!important}
+.menu-quick{margin-top:0!important}
+@media(max-width:760px){
+ .pamchal-hero{display:grid!important;grid-template-columns:minmax(0,1fr) 112px!important;align-items:center!important;gap:11px!important;margin:12px auto 8px!important;padding:14px!important;border-radius:18px!important}
+ .hero-copy{min-width:0!important}
+ .hero-copy h1{font-size:21px!important;line-height:1.55!important;margin:2px 0 5px!important}
+ .hero-copy .eyebrow{font-size:7px!important;letter-spacing:1px!important;margin-bottom:5px!important}
+ .hero-copy p{font-size:10px!important;line-height:1.8!important}
+ .hero-photo{width:112px!important;max-width:112px!important;justify-self:end!important}
+ .hero-photo-frame{height:112px!important;padding:3px!important;border-radius:13px!important}
+ .hero-photo-frame img{border-radius:10px!important}
+ .photo-caption{display:none!important}
+ .hero-stamp{width:37px!important;height:37px!important;bottom:-5px!important;left:-5px!important;font-size:15px!important}
+ .hero-stamp small{font-size:4px!important}
+ .hero-actions{display:flex!important;flex-wrap:wrap!important;gap:5px!important;margin:8px 0 6px!important}
+ .hero-actions a{min-height:32px!important;padding:6px 8px!important;font-size:9px!important;border-radius:9px!important}
+ .hero-facts{font-size:8px!important;gap:5px!important}
+ .pamchal-menu-intro{margin:10px 3px 5px!important;padding:4px 3px!important}
+ .pamchal-menu-intro h2{font-size:20px!important}
+ .pamchal-menu-intro p{font-size:10px!important;line-height:1.7!important;margin:3px auto 7px!important}
+}
+
 </style>
 
   <link rel="stylesheet" href="/pamchal-signature.css?v=20261118-signature">
@@ -951,10 +989,10 @@ body{background:radial-gradient(ellipse at 85% 0%,#e7eee7 0,transparent 34%),var
       <div class="hero-copy">
         <span class="eyebrow">PAMCHAL GARDEN HALL · MASHHAD</span>
         <h1>یک شب برای همیشه،<br><em>در باغی به نام پامچال</em></h1>
-        <p>بعضی شب‌ها فقط برگزار نمی‌شوند؛ برای همیشه در خاطر می‌مانند. در باغ‌تالار پامچال، زیبایی فضا، نور و جزئیات میزبانی کنار هم قرار می‌گیرند تا روایت شب شما، تماشایی باشد.</p>
+        <p>باغ‌تالار پامچال شاندیز؛ فضایی ۶۰۰۰ متری برای جشن‌های عروسی و لحظه‌های ماندگار، با میزبانی و پذیرایی متناسب با سلیقه شما.</p>
         <div class="hero-actions">
-          <a href="tel:+989153696949">برای ساختن شب رؤیایی‌تان</a>
-          <a class="ghost" href="#pamchal-gallery">قدم‌زدن در گالری پامچال</a>
+          <a href="tel:+989153696949">مشاوره و رزرو مراسم</a>
+          <a class="ghost" href="#pamchal-gallery">دیدن تصاویر باغ</a>
         </div>
         <div class="hero-facts"><span>از سال ۱۳۹۱</span><i></i><span>مشهد · جاده شاندیز</span><i></i><span>باغ‌تالار پامچال</span></div>
       </div>
