@@ -262,3 +262,117 @@ body > .royal-box:has(.menu-card) > h2{
 @media(prefers-reduced-motion:reduce){
   body > .royal-box:has(> .menu-line){transition:none!important}
 }
+
+
+/* PAMCHAL — accessible, calm and user-friendly color system */
+:root{
+  --ui-bg:#f7f7f3;
+  --ui-surface:#ffffff;
+  --ui-text:#202b25;
+  --ui-muted:#4d5b52;
+  --ui-green:#124b37;
+  --ui-green-dark:#082f23;
+  --ui-gold:#9a7130;
+  --ui-gold-soft:#f5eddc;
+  --ui-border:#d9dfd8;
+}
+html{background:var(--ui-bg)!important}
+body{
+  background:var(--ui-bg)!important;
+  color:var(--ui-text)!important;
+  font-family:"Vazirmatn",sans-serif!important;
+  line-height:2!important;
+}
+.pamchal-site{color:var(--ui-text)!important}
+.pamchal-intro h2,.section-heading h2,.pamchal-menu-intro h2,
+h2,.menu-title,.label{
+  color:var(--ui-green-dark)!important;
+}
+.pamchal-intro p,.section-heading p,.pamchal-menu-intro p,
+.gallery-note,.menu-card li{
+  color:var(--ui-muted)!important;
+}
+.eyebrow,.pamchal-menu-intro .eyebrow,
+.section-heading .eyebrow{
+  color:#805d25!important;
+  letter-spacing:1.8px!important;
+}
+.pamchal-hero{
+  background:linear-gradient(125deg,#082b20 0%,#104b37 100%)!important;
+  border:1px solid #c6a66b!important;
+}
+.hero-copy h1{color:#fff!important;text-shadow:none!important}
+.hero-copy h1 em{color:#f4d99e!important}
+.hero-copy p{color:#f5f6f2!important}
+.hero-facts{color:#f0eee5!important}
+.photo-caption{color:#fff!important;background:#082b20!important}
+.hero-actions a:first-child{
+  background:#f0d69a!important;color:#172b20!important;
+  border:1px solid #d0b16d!important;
+}
+.hero-actions .ghost{
+  color:#fff!important;background:#ffffff12!important;
+  border:1px solid #e5cc91!important;
+}
+.hero-actions a:focus-visible,.contact-buttons a:focus-visible,
+.instagram-cta:focus-visible,a:focus-visible,button:focus-visible{
+  outline:3px solid #bd8b35!important;outline-offset:4px!important;
+}
+.royal-box,.pamchal-gallery,.menu-card .royal-box,
+body > .royal-box:has(> .menu-line),
+body > .royal-box:has(.menu-card){
+  background:#fff!important;
+  color:var(--ui-text)!important;
+  border:1px solid var(--ui-border)!important;
+  box-shadow:0 8px 24px rgba(20,45,31,.07)!important;
+}
+.menu-line a,.menu-line a[style]{
+  color:#164b37!important;
+}
+.menu-line span,.menu-line span a{
+  color:#79551f!important;
+  font-weight:900!important;
+}
+.menu-title{color:#123f2e!important}
+.menu-price{
+  background:#f7f0df!important;
+  color:#68491c!important;
+  border:1px solid #d8c59b!important;
+}
+.menu-card ul{background:#f8f9f6!important;border-right-color:#b89a60!important}
+.menu-card li{color:#34443a!important}
+.label{color:#174c37!important}
+.contact-buttons .btn{
+  min-height:48px!important;
+  font-weight:800!important;
+  box-shadow:0 3px 10px rgba(0,0,0,.09)!important;
+}
+.btn.call{background:#f0d58e!important;color:#20271f!important}
+.btn.whatsapp{background:#13784f!important;color:#fff!important}
+.btn.instagram{background:#9c285e!important;color:#fff!important}
+.btn.location{background:#14543d!important;color:#fff!important}
+.location-menu{background:#fff!important;border:1px solid #c9b17e!important}
+.location-menu a{background:#f3f5f1!important;color:#123f2e!important}
+.location-menu a:hover{background:#14543d!important;color:#fff!important}
+.instagram-cta{background:#124b37!important;color:#fff!important;border:1px solid #b99a5d!important}
+.pamchal-trust,.pamchal-cta-band,footer{
+  background:linear-gradient(125deg,#082b20,#104b37)!important;
+  color:#fff!important;border:1px solid #c6a66b!important;
+}
+.pamchal-trust p,.pamchal-cta-band p,footer p{color:#f0f3ee!important}
+.pamchal-trust strong,.pamchal-cta-band h2{color:#fff!important}
+.pamchal-faq details{
+  background:#fff!important;color:#25352b!important;
+  border:1px solid #dce2da!important;
+}
+.pamchal-faq summary{color:#164b37!important;font-weight:800!important}
+a{ -webkit-tap-highlight-color:transparent }
+@media(max-width:600px){
+  body{font-size:15px!important}
+  .hero-copy p,.pamchal-intro p,.pamchal-menu-intro p{line-height:2.15!important}
+  .contact-buttons .btn{min-height:48px!important;font-size:14px!important}
+  .menu-line a,.menu-line a[style]{line-height:1.9!important}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}
