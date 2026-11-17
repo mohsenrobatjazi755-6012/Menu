@@ -601,7 +601,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #d9bd7b;outline-offset:4p
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pamchal-reveal{opacity:1;transform:none;transition:none}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 </style>
-</head>
+
+/* Instagram originals: render posts from the official account, not guessed thumbnails */
+.pamchal-instagram-grid{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))!important;grid-auto-rows:auto!important;align-items:start!important;gap:18px!important}
+.pamchal-instagram-grid .instagram-media{width:100%!important;max-width:540px!important;min-width:0!important;margin:0 auto!important}
+@media(max-width:700px){.pamchal-instagram-grid{grid-template-columns:1fr!important}}
+\n</head>
 
 <body>
 <nav class="pamchal-topbar" aria-label="ناوبری اصلی"><a class="pamchal-brand" href="#">PAMCHAL <span style="font-size:11px;font-weight:600;color:#e8dfca">باغ‌تالار پامچال</span></a><div class="pamchal-nav"><a href="#pamchal-gallery">گالری تصاویر</a><a href="#menu1">منوها و قیمت‌ها</a><a href="#pamchal-faq">پرسش‌های متداول</a><a class="pamchal-top-cta" href="tel:+989153696949">مشاوره و رزرو</a></div></nav>
@@ -631,17 +636,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #d9bd7b;outline-offset:4p
       <p>از لحظه ورود تا آخرین قاب جشن، جزئیات مراسم شما اهمیت دارد. تصاویر مجموعه را ببینید و برای آشنایی با منوهای پذیرایی، پایین‌تر بروید.</p>
     </section>
     <section class="pamchal-gallery" id="pamchal-gallery">
-      <div class="section-heading"><span class="eyebrow">THE PAMCHAL EXPERIENCE</span><h2>گوشه‌ای از زیبایی پامچال</h2><p>فضای ورودی، جایگاه مراسم، معماری و پذیرایی مجموعه</p></div>
-      <div class="gallery-grid">
-        <a class="gallery-tile tile-large" href="https://www.instagram.com/p/DcDzpSDBvS-/" target="_blank" rel="noopener"><img src="https://www.instagram.com/p/DcDzpSDBvS-/media/?size=l" alt="ورودی باغ‌تالار پامچال" loading="lazy"><span>ورودی باشکوه مجموعه</span></a>
-        <a class="gallery-tile" href="https://www.instagram.com/p/DY5Qgrujl0Z/" target="_blank" rel="noopener"><img src="https://www.instagram.com/p/DY5Qgrujl0Z/media/?size=l" alt="فضای مراسم پامچال" loading="lazy"><span>شکوه لحظه‌های مراسم</span></a>
-        <a class="gallery-tile" href="https://www.instagram.com/reel/DZPlKUcIYWv/" target="_blank" rel="noopener"><img src="https://www.instagram.com/reel/DZPlKUcIYWv/media/?size=l" alt="جایگاه و نورپردازی پامچال" loading="lazy"><span>جایگاه و نورپردازی</span></a>
-        <a class="gallery-tile" href="https://www.instagram.com/reel/DZNtlADu7qK/" target="_blank" rel="noopener"><img src="https://www.instagram.com/reel/DZNtlADu7qK/media/?size=l" alt="فضای باغ‌تالار پامچال" loading="lazy"><span>فضای باغ در شب</span></a>
-        <a class="gallery-tile" href="https://www.instagram.com/reel/Db8_LYuu_IX/" target="_blank" rel="noopener"><img src="https://www.instagram.com/reel/Db8_LYuu_IX/media/?size=l" alt="مراسم در باغ‌تالار پامچال" loading="lazy"><span>جشن‌های به‌یادماندنی</span></a>
-      </div>
-      <p class="gallery-note">برای مشاهده تصاویر و ویدئوهای بیشتر، صفحه رسمی اینستاگرام پامچال را ببینید.</p>
-      <a class="instagram-cta" href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener">مشاهده صفحه رسمی اینستاگرام</a>
-    </section>
+<div class="section-heading"><span class="eyebrow">THE PAMCHAL EXPERIENCE</span><h2>تصاویر واقعی باغ‌تالار پامچال</h2><p>پست‌ها و ویدئوهای منتشرشده در صفحه رسمی اینستاگرام مجموعه</p></div>
+<div class="gallery-grid pamchal-instagram-grid"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DcDzpSDBvS-/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#fff;border:0;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.08);margin:0 auto;max-width:540px;min-width:0;width:100%;"><a href="https://www.instagram.com/p/DcDzpSDBvS-/" target="_blank" rel="noopener">ورودی باغ‌تالار پامچال</a></blockquote>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DY5Qgrujl0Z/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#fff;border:0;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.08);margin:0 auto;max-width:540px;min-width:0;width:100%;"><a href="https://www.instagram.com/p/DY5Qgrujl0Z/" target="_blank" rel="noopener">فضای مراسم پامچال</a></blockquote>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DZPlKUcIYWv/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#fff;border:0;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.08);margin:0 auto;max-width:540px;min-width:0;width:100%;"><a href="https://www.instagram.com/reel/DZPlKUcIYWv/" target="_blank" rel="noopener">جایگاه و نورپردازی پامچال</a></blockquote>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DZNtlADu7qK/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#fff;border:0;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.08);margin:0 auto;max-width:540px;min-width:0;width:100%;"><a href="https://www.instagram.com/reel/DZNtlADu7qK/" target="_blank" rel="noopener">فضای باغ پامچال</a></blockquote>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Db8_LYuu_IX/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#fff;border:0;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.08);margin:0 auto;max-width:540px;min-width:0;width:100%;"><a href="https://www.instagram.com/reel/Db8_LYuu_IX/" target="_blank" rel="noopener">مراسم در باغ‌تالار پامچال</a></blockquote></div>
+<p class="gallery-note">این تصاویر مستقیماً از پست‌های صفحه رسمی اینستاگرام نمایش داده می‌شوند.</p>
+<a class="instagram-cta" href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener">مشاهده صفحه رسمی اینستاگرام</a>
+</section>
     <section class="pamchal-menu-intro"><span class="eyebrow">WEDDING MENUS</span><h2>منوهای پذیرایی پامچال</h2><p>پکیج‌های پذیرایی و قیمت‌ها را بررسی کنید و برای انتخاب مناسب مراسم خود تماس بگیرید.</p></section>
   </main>
 
@@ -1118,5 +1121,5 @@ a:focus-visible,button:focus-visible{outline:3px solid #d9bd7b;outline-offset:4p
 </script>
 
 <footer style="max-width:900px;margin:24px auto;padding:16px;text-align:center;color:#eee">این مجموعه از سال ۱۳۹۱ با مالکیت آقای رباط جزی افتتاح گردیده و فعالیت دارد.</footer>
-</body>
+<script async src="https://www.instagram.com/embed.js"></script>\n</body>
 </html>
