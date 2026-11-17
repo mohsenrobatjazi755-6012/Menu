@@ -230,6 +230,167 @@ h1 {
 .btn.instagram { background:#d62976; color:#fff; }
 .btn.location { background:#4CAF50; color:#fff; cursor:pointer; }
 
+
+/* بازطراحی ظاهری لوکس پامچال */
+:root {
+  --green-deep: #073b2d;
+  --green: #0d5a43;
+  --gold: #c7a45b;
+  --gold-light: #e5cc8b;
+  --ink: #26332d;
+  --paper: #f6f3ec;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 22px; }
+body {
+  background:
+    radial-gradient(circle at 8% 4%, rgba(199,164,91,.12), transparent 24rem),
+    linear-gradient(180deg, #f8f6f0 0%, #eeece4 100%);
+  color: var(--ink);
+  font-family: "Vazirmatn", sans-serif;
+  line-height: 1.9;
+  padding: 18px 14px 30px;
+}
+body > .royal-box:first-child {
+  max-width: 1100px;
+  padding: 34px 24px 28px;
+  margin: 0 auto 22px;
+  background: linear-gradient(140deg, #073b2d 0%, #0c5942 58%, #092f25 100%);
+  border: 1px solid rgba(229,204,139,.8);
+  border-radius: 26px;
+  box-shadow: 0 22px 55px rgba(5,48,35,.2);
+  position: relative;
+  overflow: visible;
+}
+body > .royal-box:first-child h1 {
+  color: #f3dfad;
+  font-size: clamp(25px, 4vw, 39px);
+  line-height: 1.55;
+  margin: 14px auto 8px;
+  text-shadow: none;
+}
+body > .royal-box:first-child p {
+  color: rgba(255,255,255,.88) !important;
+  font-size: 16px;
+}
+body > .royal-box:first-child h2 {
+  color: #f3dfad !important;
+  font-size: clamp(19px, 3vw, 25px);
+  margin: 20px 0 0;
+}
+body > .royal-box:first-child img {
+  width: 112px !important;
+  height: auto;
+}
+.royal-box {
+  max-width: 1000px;
+  margin: 18px auto;
+  padding: 23px;
+  color: var(--ink);
+  background: rgba(255,255,255,.96);
+  border: 1px solid rgba(199,164,91,.48);
+  border-radius: 20px;
+  box-shadow: 0 9px 28px rgba(32,49,39,.07);
+  backdrop-filter: blur(8px);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.royal-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(32,49,39,.11);
+}
+.contact-buttons {
+  max-width: 1000px;
+  margin: 18px auto 30px;
+  gap: 10px;
+}
+.contact-buttons .btn {
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 5px 14px rgba(0,0,0,.09);
+  transition: transform .2s ease, filter .2s ease;
+}
+.contact-buttons .btn:hover { transform: translateY(-2px); filter: brightness(1.04); }
+.btn.call { background: #e8c875; color: #263226; }
+.btn.whatsapp { background: #168b61; color: #fff; }
+.btn.instagram { background: linear-gradient(115deg,#833ab4,#c13584,#f77737); color: #fff; }
+.btn.location { background: var(--green); color: #fff; }
+.location-menu {
+  top: 56px;
+  background: #fff;
+  border: 1px solid var(--gold);
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.16);
+}
+.location-menu a { background: #f3f0e7; color: var(--green-deep); }
+.location-menu a:hover { background: var(--green); color: #fff; }
+.menu-line {
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.menu-line a {
+  color: var(--green) !important;
+  font-size: clamp(18px, 3vw, 25px) !important;
+  line-height: 1.6;
+}
+.menu-line span, .menu-line span a {
+  color: #9a742c;
+  font-size: clamp(21px, 3.5vw, 29px) !important;
+  font-weight: 900;
+}
+h2 {
+  color: var(--green-deep);
+  font-size: clamp(21px, 3vw, 27px);
+  margin: 22px 0 14px;
+}
+.menu-title {
+  color: var(--green-deep);
+  font-size: 23px;
+  font-weight: 900;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(199,164,91,.45);
+}
+.menu-price {
+  color: #98712b;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0 16px;
+}
+.label {
+  color: var(--green);
+  font-weight: 800;
+  margin: 17px 0 5px;
+}
+ul { padding-right: 22px; margin-top: 6px; }
+li { padding: 2px 0; color: #46534b; }
+li::marker { color: var(--gold); }
+.divider { max-width: 900px; margin: 28px auto; border-top: 1px solid rgba(199,164,91,.5); }
+footer {
+  max-width: 1000px !important;
+  margin: 32px auto 0 !important;
+  padding: 20px 14px !important;
+  color: #f4e6c4 !important;
+  background: var(--green-deep);
+  border: 1px solid var(--gold);
+  border-radius: 16px;
+  font-size: 14px;
+  box-shadow: 0 8px 22px rgba(5,48,35,.12);
+}
+@media (max-width: 600px) {
+  body { padding: 10px 9px 22px; }
+  body > .royal-box:first-child { padding: 24px 14px 20px; border-radius: 20px; }
+  .royal-box { padding: 17px 14px; margin: 13px auto; border-radius: 16px; }
+  .contact-buttons { gap: 8px; }
+  .contact-buttons .btn { flex: 1 1 calc(50% - 8px); font-size: 14px; padding: 12px 9px; }
+  .menu-line { align-items: flex-start; }
+  .menu-line span { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
   </style>
 </head>
 
