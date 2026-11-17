@@ -640,7 +640,97 @@ a:focus-visible,button:focus-visible{outline:3px solid #d9bd7b;outline-offset:4p
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pamchal-reveal{opacity:1;transform:none;transition:none}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
-</style>
+
+/* PAMCHAL UX cleanup — one consistent layout layer */
+:root{
+ --ux-ink:#24342b;--ux-muted:#59665e;--ux-green:#123f2e;
+ --ux-gold:#9a7438;--ux-line:#e5e8e2;--ux-paper:#f7f8f5;
+}
+html{scroll-padding-top:18px}
+body{padding:0 0 28px!important;overflow-x:hidden!important;color:var(--ux-ink)!important;background:var(--ux-paper)!important}
+.pamchal-site{width:min(100%,1240px)!important;margin-inline:auto!important;padding-inline:clamp(12px,3vw,30px)!important}
+.pamchal-hero{min-height:0!important;margin-bottom:38px!important;padding:clamp(30px,5vw,68px)!important;gap:clamp(22px,4vw,54px)!important}
+.hero-copy h1{font-size:clamp(34px,5vw,58px)!important;line-height:1.45!important;letter-spacing:0!important}
+.hero-copy p{max-width:58ch!important;font-size:15px!important;line-height:2.15!important}
+.hero-actions{gap:10px!important;margin:22px 0!important}
+.hero-actions a{min-height:48px!important;padding:12px 20px!important}
+.pamchal-intro{padding:20px 4% 42px!important;gap:28px!important}
+.pamchal-intro p,.section-heading p,.pamchal-menu-intro p{font-size:15px!important;line-height:2.1!important}
+.pamchal-gallery{margin:10px auto 36px!important;padding:clamp(20px,4vw,44px)!important}
+.gallery-grid{gap:10px!important}
+.pamchal-menu-intro{padding:44px 14px 14px!important}
+.pamchal-menu-intro h2,.pamchal-intro h2,.section-heading h2{line-height:1.55!important}
+body > .royal-box:has(> .menu-line){
+ display:inline-flex!important;vertical-align:top!important;
+ width:calc(33.333% - 14px)!important;min-height:82px!important;
+ margin:7px!important;padding:14px 16px!important;
+ align-items:center!important;border-radius:12px!important;
+}
+body > .royal-box:has(> .menu-line) .menu-line{
+ width:100%!important;display:flex!important;align-items:center!important;
+ justify-content:space-between!important;gap:8px!important;flex-wrap:wrap!important;
+}
+body > .royal-box:has(> .menu-line) .menu-line a{
+ font-size:15px!important;font-weight:800!important;line-height:1.7!important;
+}
+body > .royal-box:has(> .menu-line) .menu-line span,
+body > .royal-box:has(> .menu-line) .menu-line span a{
+ width:auto!important;font-size:17px!important;font-weight:900!important;line-height:1.5!important;
+}
+body > .royal-box:has(.menu-card){max-width:1080px!important;margin:24px auto!important;padding:clamp(16px,3vw,30px)!important}
+.menu-card{scroll-margin-top:18px!important;margin:0 0 18px!important}
+.menu-card > .royal-box{margin:0 auto!important;padding:clamp(16px,2.5vw,26px)!important;border-radius:12px!important}
+.menu-title{font-size:21px!important;line-height:1.7!important}
+.menu-price{display:inline-block!important;padding:7px 13px!important;border-radius:7px!important;font-size:16px!important}
+.menu-card ul{margin:7px 0 13px!important;padding:10px 30px 10px 12px!important}
+.menu-card li{font-size:14px!important;line-height:1.9!important}
+.label{font-size:14px!important;margin:14px 0 4px!important}
+.divider{margin:22px auto!important}
+.pamchal-trust,.pamchal-cta-band,.pamchal-faq{width:calc(100% - 32px)!important;max-width:1080px!important}
+.pamchal-trust{margin:38px auto!important}
+.pamchal-cta-band{margin:38px auto!important}
+.pamchal-faq{margin:38px auto!important}
+.pamchal-faq details{padding:14px 17px!important}
+.pamchal-floating{bottom:12px!important;left:12px!important}
+footer{width:calc(100% - 32px)!important;margin:36px auto 18px!important}
+a,button{touch-action:manipulation}
+@media(max-width:760px){
+ .pamchal-site{padding-inline:10px!important}
+ .pamchal-hero{margin:0 -10px 30px!important;padding:34px 20px 28px!important}
+ .hero-copy h1{font-size:clamp(32px,8.5vw,43px)!important}
+ .hero-actions a{flex:1 1 100%!important}
+ .hero-photo-frame{height:330px!important}
+ .pamchal-intro{padding:8px 4% 28px!important}
+ .pamchal-gallery{padding:22px 12px!important}
+ .gallery-grid{grid-template-rows:145px 145px 145px!important;gap:8px!important}
+ .pamchal-menu-intro{padding:32px 12px 12px!important}
+ body > .royal-box:has(> .menu-line){
+  display:flex!important;width:calc(100% - 20px)!important;
+  min-height:0!important;margin:7px 10px!important;padding:12px 14px!important;
+ }
+ body > .royal-box:has(> .menu-line) .menu-line{align-items:center!important;flex-direction:row!important}
+ body > .royal-box:has(> .menu-line) .menu-line a{font-size:14px!important}
+ body > .royal-box:has(> .menu-line) .menu-line span,
+ body > .royal-box:has(> .menu-line) .menu-line span a{font-size:16px!important}
+ body > .royal-box:has(.menu-card){margin:18px 10px!important;padding:14px 10px!important}
+ .menu-card > .royal-box{padding:16px 13px!important}
+ .menu-title{font-size:19px!important}
+ .menu-card li{font-size:13.5px!important}
+ .pamchal-trust,.pamchal-cta-band,.pamchal-faq{width:calc(100% - 20px)!important}
+ .pamchal-trust{margin:28px auto!important}
+ .pamchal-cta-band{margin:28px auto!important}
+ .pamchal-faq{margin:30px auto!important}
+ .pamchal-floating a{width:44px!important;height:44px!important}
+}
+@media(max-width:380px){
+ .gallery-grid{grid-template-rows:125px 125px 125px!important}
+ .menu-line span,.menu-line span a{font-size:15px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .pamchal-reveal{opacity:1!important;transform:none!important}
+}
+
+  </style>
 
   <link rel="stylesheet" href="/pamchal-signature.css?v=20261118-signature">
   <link rel="stylesheet" href="/pamchal-editorial.css?v=20261118-contrast2">
