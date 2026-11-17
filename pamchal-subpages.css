@@ -1,0 +1,39 @@
+/* Shared editorial system for PAMCHAL secondary pages */
+:root{--p-green:#103e30;--p-dark:#092b22;--p-gold:#c5a66a;--p-ink:#26352d;--p-muted:#65736b;--p-paper:#f7f7f3;--p-line:#e5e8e1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0!important;padding:26px 16px 70px!important;background:var(--p-paper)!important;color:var(--p-ink)!important;font-family:"Vazirmatn",Tahoma,sans-serif!important;line-height:1.9!important}
+body>main,body>.wrap{width:min(980px,100%);margin:0 auto!important;padding:0!important}
+body>main>header,body>.wrap>header{padding:30px 28px!important;margin:0 0 22px!important;background:linear-gradient(120deg,var(--p-dark),#15513d)!important;border:1px solid var(--p-gold)!important;border-radius:22px!important;box-shadow:0 14px 36px rgba(18,48,35,.09)!important;color:#fff!important}
+body header h1{margin:6px 0 10px!important;color:#fff!important;font-size:clamp(25px,4vw,36px)!important;line-height:1.55!important;text-align:right!important}
+body header p{color:#e5ebe6!important;font-size:14px!important;line-height:2!important}
+body header nav,body nav.actions{display:flex;flex-wrap:wrap;gap:8px!important;margin-top:18px!important}
+body header nav a,body nav.actions a{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px!important;border:1px solid #d9c18c!important;border-radius:10px!important;background:transparent!important;color:#fff!important;font-size:12px!important;font-weight:800!important;text-decoration:none!important}
+body header nav a:first-child,body nav.actions a.primary{background:#e6cc91!important;color:#1b3025!important}
+body main>section,body .wrap>main>section,body>main>section{margin:14px 0!important;padding:22px 24px!important;background:#fff!important;border:1px solid var(--p-line)!important;border-radius:17px!important;box-shadow:0 8px 24px rgba(18,48,35,.045)!important}
+body h2{margin:0 0 10px!important;color:var(--p-green)!important;font-size:21px!important;line-height:1.6!important}
+body p,body li,body dd{color:#4b5b51!important;font-size:13px!important;line-height:2!important}
+body a{color:var(--p-green)}
+body img{max-width:100%;height:auto}
+body .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+body .grid figure,body figure{margin:0;padding:8px;background:#fff;border:1px solid var(--p-line);border-radius:14px;overflow:hidden}
+body .grid img,body figure img{display:block;width:100%;height:auto;max-height:460px;object-fit:cover;border-radius:9px}
+body figcaption{padding:8px 4px;color:var(--p-muted);font-size:11px}
+body dl{display:grid;grid-template-columns:180px 1fr;gap:8px 14px}
+body dt{font-weight:900;color:var(--p-green);font-size:13px}
+body dd{margin:0;padding-bottom:8px;border-bottom:1px solid var(--p-line)}
+body footer{max-width:980px;margin:24px auto!important;padding:16px!important;text-align:center;background:var(--p-dark)!important;color:#f2e7ce!important;border:1px solid var(--p-gold);border-radius:14px}
+@media(max-width:640px){
+ body{padding:12px 10px 72px!important}
+ body>main>header,body>.wrap>header{padding:20px 16px!important;border-radius:16px!important}
+ body header h1{font-size:23px!important}
+ body header p{font-size:12px!important}
+ body header nav a,body nav.actions a{flex:1 1 calc(50% - 8px);font-size:10px!important;padding:8px!important}
+ body main>section,body .wrap>main>section,body>main>section{padding:15px 13px!important;border-radius:13px!important}
+ body h2{font-size:18px!important}
+ body p,body li,body dd{font-size:11px!important}
+ body .grid{grid-template-columns:1fr 1fr;gap:7px}
+ body .grid img,body figure img{max-height:260px}
+ body dl{grid-template-columns:1fr;gap:2px}
+ body dd{padding-bottom:9px;margin-bottom:7px}
+}
