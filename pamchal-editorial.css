@@ -1,0 +1,93 @@
+/* PAMCHAL — EDITORIAL SIGNATURE / 2026 */
+:root{--p-forest:#071f19;--p-green:#123f30;--p-gold:#d8bd83;--p-paper:#f5f1e7;--p-ink:#1a3026}
+body{background:var(--p-paper)!important;color:var(--p-ink)!important}
+.pamchal-hero{min-height:min(780px,91svh)!important;max-width:1500px!important;margin:0 auto 86px!important;padding:clamp(42px,8vw,116px) clamp(24px,8vw,120px)!important;grid-template-columns:1.08fr .92fr!important;gap:clamp(28px,6vw,90px)!important;border-radius:0 0 48px 48px!important;background:radial-gradient(ellipse at 82% 18%,#c5a76b2c,transparent 27%),radial-gradient(ellipse at 10% 95%,#2c79512b,transparent 32%),linear-gradient(125deg,#041912,#0a3024 52%,#143e2e)!important;box-shadow:0 38px 100px #071d1633!important}
+.pamchal-hero:before{content:"";position:absolute;inset:-30%;pointer-events:none;background:repeating-radial-gradient(ellipse at 72% 42%,transparent 0 74px,#dfc58a0b 75px 76px);animation:pamchalHalo 55s linear infinite}
+.pamchal-hero:after{inset:18px!important;border:1px solid #d8bd825c!important;border-radius:0 0 34px 34px!important}
+@keyframes pamchalHalo{to{transform:rotate(360deg)}}
+.hero-copy{max-width:650px!important}
+.hero-copy .eyebrow{font-size:10px!important;letter-spacing:3.6px!important;color:#d8bd83!important}
+.hero-copy h1{font-size:clamp(40px,6.3vw,82px)!important;line-height:1.38!important;letter-spacing:-2px!important;margin:0 0 24px!important}
+.hero-copy h1 em{color:#f0d9a5!important;text-shadow:0 12px 45px #d8bd8240!important}
+.hero-copy p{font-size:clamp(15px,1.4vw,18px)!important;line-height:2.5!important;color:#e8e9df!important;max-width:560px!important}
+.hero-actions{margin-top:35px!important;gap:12px!important}
+.hero-actions a{border-radius:3px!important;min-height:58px!important;padding:15px 28px!important;font-size:14px!important;letter-spacing:.1px;box-shadow:0 12px 30px #0003!important}
+.hero-actions a:first-child{background:linear-gradient(120deg,#f0dba8,#c3a064)!important;color:#142b20!important}
+.hero-actions .ghost{border:1px solid #d8bd83!important;background:#ffffff08!important;color:#f2e6cb!important}
+.hero-facts{gap:15px!important;color:#d7dfd7!important;font-size:12px!important}
+.hero-photo{max-width:500px!important}
+.hero-photo-frame{height:clamp(390px,46vw,590px)!important;padding:9px!important;border-radius:260px 260px 8px 8px!important;border:1px solid #d8bd83!important;background:linear-gradient(140deg,#d8bd8240,#ffffff08)!important;box-shadow:0 28px 80px #0007!important}
+.hero-photo-frame img{border-radius:250px 250px 3px 3px!important;filter:saturate(.9) contrast(1.06)!important}
+.photo-caption{border-radius:2px!important;border:1px solid #d8bd8277!important;background:#061e17ed!important;letter-spacing:.3px}
+.hero-stamp{width:92px!important;height:92px!important;left:-24px!important;background:linear-gradient(140deg,#f2dfb1,#bd9856)!important;border:4px solid #0a3024!important;outline:1px solid #d8bd83!important}
+.pamchal-intro{max-width:1150px!important;margin:0 auto 58px!important;gap:clamp(30px,7vw,100px)!important}
+.pamchal-intro h2,.section-heading h2,.pamchal-menu-intro h2{font-size:clamp(28px,4vw,47px)!important;line-height:1.6!important;letter-spacing:-.8px!important}
+.pamchal-intro p{font-size:16px!important;line-height:2.5!important;border-right:2px solid #c5a66d;padding-right:23px;color:#68756b!important}
+.pamchal-signature{max-width:1200px;margin:0 auto 82px;padding:clamp(30px,6vw,76px);background:linear-gradient(135deg,#071f19,#0c3b2b 65%,#173f2f);color:#f7f0df;border:1px solid #c8a96b;position:relative;overflow:hidden;box-shadow:0 28px 80px #0a2b1e25}
+.pamchal-signature:before{content:"P";position:absolute;left:4%;top:-90px;font:400 360px/1 Georgia,serif;color:#ffffff08;pointer-events:none}
+.signature-kicker{text-align:center;letter-spacing:5px;font:10px Arial,sans-serif;color:#d8bd83;margin-bottom:44px}
+.signature-main{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(25px,7vw,90px);align-items:center;position:relative}
+.signature-number{min-height:210px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #d8bd8377;background:#ffffff08;outline:1px solid #d8bd8322;outline-offset:8px}
+.signature-number strong{font-size:clamp(64px,9vw,112px);line-height:1;color:#f0d9a5;font-weight:300;letter-spacing:-5px}
+.signature-number span{font-size:14px;color:#e6ddc7;margin-top:18px}
+.signature-copy .eyebrow{color:#d8bd83!important}
+.signature-copy h2{font-size:clamp(27px,4vw,46px);line-height:1.65;color:#fff!important;margin:8px 0 12px}
+.signature-copy h2 em{font-style:normal;color:#e8d19c}
+.signature-copy p{font-size:15px;line-height:2.5;color:#d8e0d7;max-width:650px}
+.signature-owner{position:relative;margin-top:45px;padding-top:25px;border-top:1px solid #d8bd8355;display:flex;align-items:baseline;gap:15px;flex-wrap:wrap}
+.signature-owner span{font-size:12px;color:#d8bd83}
+.signature-owner strong{font-size:clamp(19px,2.7vw,28px);color:#fff;font-weight:700}
+.signature-owner small{font-size:11px;color:#bdc9bf}
+.pamchal-gallery{max-width:1240px!important;padding:clamp(30px,5vw,68px)!important;border-radius:3px 3px 34px 34px!important;border:1px solid #e0d2b2!important;background:linear-gradient(145deg,#fff,#f7f3e9)!important;box-shadow:0 30px 90px #19362412!important}
+.section-heading{margin-bottom:38px!important}
+.section-heading .eyebrow,.pamchal-menu-intro .eyebrow{letter-spacing:3px!important}
+.gallery-grid{gap:13px!important;grid-template-rows:clamp(190px,24vw,310px) clamp(190px,24vw,310px)!important}
+.gallery-tile{border-radius:3px!important}
+.gallery-tile:after{inset:22% 0 0!important;background:linear-gradient(transparent,#061d17d9)!important}
+.gallery-tile span{font-size:14px!important;right:18px!important;bottom:17px!important}
+.gallery-tile img{transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .5s!important}
+.gallery-tile:hover img{transform:scale(1.055)!important;filter:saturate(1.1)!important}
+.instagram-cta{border-radius:2px!important;padding:15px 24px!important;background:#0b3829!important;border:1px solid #c8a96b!important;color:#f0dfb7!important}
+.pamchal-menu-intro{padding:66px 15px 24px!important}
+.pamchal-menu-intro p{font-size:15px!important;line-height:2.3!important}
+.royal-box{border-radius:4px!important;border:1px solid #e2d5b9!important;box-shadow:0 15px 42px #1833230c!important;padding:25px!important}
+.menu-title{font-size:23px!important;letter-spacing:-.3px}
+.menu-price{border-radius:2px!important;background:#f3eddf!important;border:1px solid #e5d7b7!important;padding:7px 14px!important}
+.menu-line{padding:13px 0!important}
+.pamchal-trust{max-width:1200px!important;margin:75px auto!important;padding:30px!important;background:linear-gradient(120deg,#071f19,#104532)!important;border:1px solid #c8a96b!important;border-radius:3px!important}
+.pamchal-trust article{padding:24px!important}
+.pamchal-trust strong{font-size:19px!important;letter-spacing:.1px}
+.pamchal-cta-band{max-width:1200px!important;padding:clamp(35px,7vw,85px)!important;border-radius:3px 3px 32px 32px!important;background:radial-gradient(ellipse at 50% 0,#d8bd8226,transparent 55%),linear-gradient(130deg,#061e17,#104532)!important}
+.pamchal-cta-band h2{font-size:clamp(28px,4.4vw,48px)!important;line-height:1.5!important}
+.pamchal-cta-band p{font-size:15px!important;line-height:2.4!important}
+.pamchal-cta-band a{border-radius:2px!important;padding:16px 28px!important}
+.pamchal-faq h2{font-size:clamp(27px,3.5vw,38px)!important}
+.pamchal-faq details{border-radius:2px!important;padding:19px 22px!important}
+.pamchal-floating a{border-radius:3px!important}
+@media(max-width:760px){
+ .pamchal-hero{grid-template-columns:1fr!important;min-height:0!important;margin:0 -10px 45px!important;padding:43px 24px 36px!important;border-radius:0 0 25px 25px!important;gap:26px!important}
+ .hero-copy h1{font-size:clamp(36px,9.2vw,49px)!important;letter-spacing:-1px!important}
+ .hero-copy p{font-size:15px!important}
+ .hero-actions a{width:100%!important;flex:1 1 100%!important;justify-content:center!important}
+ .hero-photo{max-width:340px!important}
+ .hero-photo-frame{height:385px!important}
+ .hero-stamp{width:72px!important;height:72px!important;left:-7px!important;font-size:26px!important}
+ .pamchal-intro{grid-template-columns:1fr!important;padding:12px 5% 36px!important;gap:5px!important}
+ .pamchal-signature{margin:0 10px 48px!important;padding:32px 20px!important}
+ .signature-kicker{margin-bottom:28px!important}
+ .signature-main{grid-template-columns:1fr!important;gap:27px!important}
+ .signature-number{min-height:155px!important}
+ .signature-number strong{font-size:76px!important}
+ .signature-owner{gap:8px 13px!important;margin-top:30px!important}
+ .pamchal-gallery{padding:32px 14px!important;margin:0 0 36px!important}
+ .gallery-grid{grid-template-columns:1fr 1fr!important;grid-template-rows:165px 165px 165px!important;gap:9px!important}
+ .tile-large{grid-row:span 2}
+ .gallery-tile:last-child{grid-column:span 2}
+ .pamchal-menu-intro{padding:38px 12px 15px!important}
+ .pamchal-trust{grid-template-columns:1fr!important;margin:42px 12px!important;padding:14px!important}
+ .pamchal-trust article{border-left:0!important;border-bottom:1px solid #d8bd8255!important;padding:17px!important}
+ .pamchal-trust article:last-child{border:0!important}
+ .pamchal-cta-band{margin:42px 12px!important;padding:36px 20px!important}
+ .pamchal-faq{margin:42px auto!important}
+}
+@media(prefers-reduced-motion:reduce){.pamchal-hero:before{animation:none!important}.pamchal-hero,.pamchal-signature *,.gallery-tile img{transition:none!important}}
