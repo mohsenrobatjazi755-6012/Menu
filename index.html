@@ -550,10 +550,61 @@ footer{border-radius:4px!important;letter-spacing:.2px}
  .hero-actions a{flex:1 1 100%}
 }
 
+
+/* PAMCHAL — Signature Experience / accessibility + conversion */
+:root{--pm-forest:#06291f;--pm-jade:#0d4936;--pm-gold:#d9bd7b;--pm-ivory:#fbf8f0}
+html{scroll-padding-top:90px}
+body{overflow-x:hidden}
+a,button{ -webkit-tap-highlight-color:transparent }
+a:focus-visible,button:focus-visible{outline:3px solid #d9bd7b;outline-offset:4px}
+.pamchal-topbar{position:sticky;top:0;z-index:999;background:#06291ff2;backdrop-filter:blur(14px);border-bottom:1px solid #d9bd7b66;color:#f8f0dd;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px clamp(14px,4vw,48px);box-shadow:0 8px 30px #061e1722}
+.pamchal-brand{font-weight:900;letter-spacing:.4px;color:#f0d99f;text-decoration:none;font-size:18px}
+.pamchal-nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.pamchal-nav a{color:#f7f1e5;text-decoration:none;font-size:13px;font-weight:700;opacity:.9}
+.pamchal-nav a:hover{color:#f0d99f}
+.pamchal-top-cta{background:linear-gradient(120deg,#f0d99f,#c6a45f);color:#14291f!important;padding:10px 17px;border-radius:4px}
+.pamchal-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1080px;margin:0 auto 55px;padding:0 18px}
+.pamchal-trust article{background:#fff;border:1px solid #e7dcc5;border-radius:10px;padding:22px 18px;text-align:center;box-shadow:0 12px 35px #102d2010}
+.pamchal-trust strong{display:block;color:#0b4935;font-size:18px;margin-bottom:7px}
+.pamchal-trust span{color:#70796f;font-size:13px;line-height:1.9}
+.pamchal-cta-band{max-width:1120px;margin:30px auto 60px;padding:clamp(25px,5vw,52px);background:linear-gradient(120deg,#06291f,#104a37);border:1px solid #d9bd7b;border-radius:8px;color:#fff;text-align:center;position:relative;overflow:hidden}
+.pamchal-cta-band:before{content:"P";position:absolute;left:5%;top:-65px;font:220px Georgia;color:#fff0a;opacity:.06}
+.pamchal-cta-band h2{color:#f0d99f!important;font-size:clamp(25px,4vw,38px);margin:0 0 12px}
+.pamchal-cta-band p{color:#e8e4d9;line-height:2;margin:0 auto 22px;max-width:650px}
+.pamchal-cta-band a{display:inline-flex;padding:14px 25px;margin:5px;border-radius:4px;text-decoration:none;font-weight:900;background:#e4cc91;color:#14291f}
+.pamchal-cta-band a.secondary{background:transparent;border:1px solid #e4cc91;color:#f6e9c8}
+.pamchal-faq{max-width:1000px;margin:55px auto;padding:0 18px}
+.pamchal-faq h2{text-align:center!important;font-size:clamp(25px,3vw,36px)!important;margin-bottom:25px}
+.pamchal-faq details{background:#fff;border:1px solid #e5dac2;border-radius:8px;padding:17px 20px;margin:10px 0;box-shadow:0 7px 22px #193a2910}
+.pamchal-faq summary{cursor:pointer;font-weight:800;color:#0d4936;list-style:none}
+.pamchal-faq summary::-webkit-details-marker{display:none}
+.pamchal-faq summary:after{content:"＋";float:left;color:#a98545;font-size:20px}
+.pamchal-faq details[open] summary:after{content:"−"}
+.pamchal-faq p{color:#68756d;line-height:2;margin:13px 0 0;font-size:14px}
+.pamchal-floating{position:fixed;z-index:1000;bottom:16px;left:16px;display:flex;flex-direction:column;gap:9px}
+.pamchal-floating a{width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:#0b4935;color:#fff;text-decoration:none;font-size:22px;border:1px solid #d9bd7b;box-shadow:0 8px 25px #061e1740}
+.pamchal-floating a.call{background:#d9bd7b;color:#08291f}
+.pamchal-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.pamchal-reveal.is-visible{opacity:1;transform:none}
+@media(max-width:700px){
+ .pamchal-topbar{padding:9px 12px}
+ .pamchal-brand{font-size:15px}
+ .pamchal-nav{gap:10px}
+ .pamchal-nav a{font-size:11px}
+ .pamchal-nav a:not(.pamchal-top-cta){display:none}
+ .pamchal-trust{grid-template-columns:1fr;gap:9px;margin-bottom:35px}
+ .pamchal-trust article{padding:15px}
+ .pamchal-floating{bottom:12px;left:12px}
+ .pamchal-floating a{width:48px;height:48px}
+ .pamchal-faq{margin:38px auto}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pamchal-reveal{opacity:1;transform:none;transition:none}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
 </style>
 </head>
 
 <body>
+<nav class="pamchal-topbar" aria-label="ناوبری اصلی"><a class="pamchal-brand" href="#">PAMCHAL <span style="font-size:11px;font-weight:600;color:#e8dfca">باغ‌تالار پامچال</span></a><div class="pamchal-nav"><a href="#pamchal-gallery">گالری تصاویر</a><a href="#menu1">منوها و قیمت‌ها</a><a href="#pamchal-faq">پرسش‌های متداول</a><a class="pamchal-top-cta" href="tel:+989153696949">مشاوره و رزرو</a></div></nav>
 
   <main class="pamchal-site">
     <section class="pamchal-hero">
@@ -1043,6 +1094,29 @@ footer{border-radius:4px!important;letter-spacing:.2px}
     </div>
 
   </div>
+
+<section class="pamchal-trust" aria-label="ویژگی‌های مجموعه">
+<article><strong>از سال ۱۳۹۱</strong><span>تجربه میزبانی از جشن‌ها و لحظه‌های به‌یادماندنی</span></article>
+<article><strong>باغ‌تالار پامچال</strong><span>مشهد، جاده شاندیز؛ فضایی برای جشن‌های باشکوه</span></article>
+<article><strong>منوهای متنوع پذیرایی</strong><span>بررسی جزئیات منوها و قیمت‌ها پیش از تماس</span></article>
+</section>
+<section class="pamchal-cta-band">
+<h2>جشن شما، آغاز یک خاطره ماندگار</h2>
+<p>برای دریافت راهنمایی درباره منوهای پذیرایی، شرایط برگزاری مراسم و هماهنگی بازدید از مجموعه، با پامچال تماس بگیرید.</p>
+<a href="tel:+989153696949">تماس مستقیم برای مشاوره</a>
+<a class="secondary" href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener">دیدن اینستاگرام پامچال</a>
+</section>
+<section class="pamchal-faq" id="pamchal-faq">
+<h2>پرسش‌های متداول</h2>
+<details><summary>چطور از منوهای پذیرایی و قیمت‌ها مطلع شوم؟</summary><p>منوها و قیمت‌های درج‌شده در همین صفحه قابل مشاهده‌اند. برای هماهنگی و دریافت اطلاعات تکمیلی با مجموعه تماس بگیرید.</p></details>
+<details><summary>چطور برای بازدید یا رزرو مراسم هماهنگ کنم؟</summary><p>از دکمه تماس استفاده کنید تا برای مشاوره، بازدید و بررسی تاریخ مراسم راهنمایی شوید.</p></details>
+<details><summary>باغ‌تالار پامچال کجا قرار دارد؟</summary><p>مشهد، جاده شاندیز، بعد از ویرانی، شهرک صنعتی توس، نبش ثامن ۱۱.</p></details>
+</section>
+<div class="pamchal-floating" aria-label="راه‌های ارتباطی سریع"><a class="call" href="tel:+989153696949" aria-label="تماس تلفنی">☎</a><a href="https://www.instagram.com/pamchal_garden_hall/" target="_blank" rel="noopener" aria-label="اینستاگرام">◎</a></div>
+<script>
+(()=>{const els=document.querySelectorAll('.pamchal-hero,.pamchal-intro,.pamchal-gallery,.pamchal-menu-intro,.menu-card,.royal-box,.pamchal-trust article,.pamchal-cta-band,.pamchal-faq');els.forEach(el=>el.classList.add('pamchal-reveal'));if(!('IntersectionObserver'in window)){els.forEach(el=>el.classList.add('is-visible'));return;}const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.08});els.forEach(el=>io.observe(el));})();
+</script>
+
 <footer style="max-width:900px;margin:24px auto;padding:16px;text-align:center;color:#eee">این مجموعه از سال ۱۳۹۱ با مالکیت آقای رباط جزی افتتاح گردیده و فعالیت دارد.</footer>
 </body>
 </html>
