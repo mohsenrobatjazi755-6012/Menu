@@ -376,3 +376,36 @@ a{ -webkit-tap-highlight-color:transparent }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 }
+
+
+/* FINAL OVERRIDE — clear hierarchy and strong readable contrast */
+body,body *{text-shadow:none}
+body{background:#f7f7f4!important;color:#202b25!important}
+.pamchal-site,.pamchal-site p,.pamchal-site li{color:#35443b}
+.pamchal-hero,.pamchal-hero *{color:#fff}
+.pamchal-hero .eyebrow,.pamchal-hero h1 em{color:#f3d99e!important}
+.pamchal-hero .hero-actions a:first-child{color:#18291f!important}
+.pamchal-hero .hero-actions .ghost{color:#fff!important}
+.pamchal-intro h2,.section-heading h2,.pamchal-menu-intro h2,
+.pamchal-faq h2,.menu-title,h2{color:#103e2d!important}
+.pamchal-intro p,.section-heading p,.pamchal-menu-intro p,
+.gallery-note,.menu-card li{color:#46564c!important}
+.royal-box,.menu-card .royal-box,body > .royal-box:has(> .menu-line),
+body > .royal-box:has(.menu-card){background:#fff!important;color:#202b25!important}
+.menu-line a,.menu-line a[style],.menu-title,.label{color:#123f2e!important}
+.menu-line span,.menu-line span a,.menu-price{color:#674719!important}
+.menu-price{background:#f7efdD!important;border-color:#d8c59b!important}
+.menu-card ul{background:#f7f8f5!important}
+.menu-card li{color:#35443b!important}
+.pamchal-trust,.pamchal-cta-band,footer{background:#0b3829!important;color:#fff!important}
+.pamchal-trust *,.pamchal-cta-band * ,footer *{color:#fff!important}
+.pamchal-trust .eyebrow,.pamchal-cta-band .eyebrow{color:#f3d99e!important}
+.contact-buttons .btn.call{background:#f0d58e!important;color:#20271f!important}
+.contact-buttons .btn.whatsapp{background:#13784f!important;color:#fff!important}
+.contact-buttons .btn.instagram{background:#922653!important;color:#fff!important}
+.contact-buttons .btn.location{background:#14543d!important;color:#fff!important}
+@media(max-width:600px){
+ .pamchal-site{font-size:15px!important}
+ .pamchal-intro p,.section-heading p,.pamchal-menu-intro p{font-size:15px!important;line-height:2.15!important}
+ .menu-card li{font-size:14px!important}
+}
