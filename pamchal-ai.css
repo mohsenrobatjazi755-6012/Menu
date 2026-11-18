@@ -20,3 +20,11 @@
 .pamchal-ai-form button:disabled{opacity:.55;cursor:wait}
 .pamchal-ai-foot{font-size:10px;color:#777;text-align:center;padding:0 10px 9px;background:white}
 @media(max-width:480px){.pamchal-ai-launcher{left:12px;bottom:84px}.pamchal-ai-panel{left:8px;bottom:143px;width:calc(100vw - 16px);height:min(570px,calc(100dvh - 165px))}}
+
+.pamchal-ai-lead{padding:12px;border-top:1px solid #e7e0d1;background:#f7f5ef;display:flex;flex-direction:column;gap:8px}
+.pamchal-ai-lead[hidden]{display:none}
+.pamchal-ai-lead strong{font-size:13px;color:#164632}
+.pamchal-ai-lead input{width:100%;border:1px solid #d9d2c3;border-radius:10px;padding:10px;font:13px Vazirmatn,sans-serif;direction:rtl}
+.pamchal-ai-lead small{font-size:10px;color:#6d716b}
+.pamchal-ai-lead button{border:0;border-radius:10px;background:#0d4934;color:#fff;padding:10px;font:700 13px Vazirmatn,sans-serif;cursor:pointer}
+.pamchal-ai-lead button:disabled{opacity:.6}
