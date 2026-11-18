@@ -1,0 +1,22 @@
+/* PAMCHAL AI assistant */
+.pamchal-ai-launcher{position:fixed;left:20px;bottom:92px;z-index:9998;border:0;border-radius:999px;background:linear-gradient(135deg,#d7bd83,#a78343);color:#102c22;padding:13px 18px;font:700 14px Vazirmatn, sans-serif;box-shadow:0 8px 28px #0005;cursor:pointer;display:flex;align-items:center;gap:9px}
+.pamchal-ai-launcher .ai-orb{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#103b2c;color:#f2dfb5;font-size:16px}
+.pamchal-ai-panel{position:fixed;left:18px;bottom:154px;z-index:9999;width:min(380px,calc(100vw - 28px));height:min(570px,calc(100dvh - 185px));background:#fbfaf6;color:#20251f;border:1px solid #d8c9a7;border-radius:22px;box-shadow:0 18px 60px #0005;display:none;overflow:hidden;direction:rtl;font-family:Vazirmatn,sans-serif}
+.pamchal-ai-panel.is-open{display:flex;flex-direction:column}
+.pamchal-ai-head{background:linear-gradient(120deg,#062f23,#0e5139);color:#f7efd9;padding:16px;display:flex;align-items:center;gap:11px}
+.pamchal-ai-head .ai-mark{width:40px;height:40px;border:1px solid #d9c18a;border-radius:50%;display:grid;place-items:center;color:#e8d4a7;font-size:19px}
+.pamchal-ai-head strong{display:block;font-size:15px}.pamchal-ai-head small{color:#d9d2bd;font-size:11px}
+.pamchal-ai-close{margin-right:auto;border:0;background:transparent;color:white;font-size:24px;cursor:pointer}
+.pamchal-ai-messages{padding:14px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:10px}
+.pamchal-ai-msg{max-width:90%;padding:10px 12px;border-radius:15px;font-size:13px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere}
+.pamchal-ai-msg.bot{background:#f0ecdf;border:1px solid #e4dcc8;align-self:flex-start;border-bottom-right-radius:4px}
+.pamchal-ai-msg.user{background:#0d4934;color:#fff;align-self:flex-end;border-bottom-left-radius:4px}
+.pamchal-ai-quick{display:flex;gap:7px;flex-wrap:wrap;padding:0 12px 10px}
+.pamchal-ai-quick button{border:1px solid #cbb98e;background:#fffdf8;color:#375342;border-radius:20px;padding:7px 10px;font:12px Vazirmatn,sans-serif;cursor:pointer}
+.pamchal-ai-form{display:flex;gap:8px;padding:11px;border-top:1px solid #e7e0d1;background:#fff}
+.pamchal-ai-form input{min-width:0;flex:1;border:1px solid #d9d2c3;border-radius:13px;padding:11px;font:13px Vazirmatn,sans-serif;outline:none}
+.pamchal-ai-form input:focus{border-color:#94743c}
+.pamchal-ai-form button{border:0;border-radius:12px;background:#0d4934;color:#fff;padding:0 15px;font:700 13px Vazirmatn,sans-serif;cursor:pointer}
+.pamchal-ai-form button:disabled{opacity:.55;cursor:wait}
+.pamchal-ai-foot{font-size:10px;color:#777;text-align:center;padding:0 10px 9px;background:white}
+@media(max-width:480px){.pamchal-ai-launcher{left:12px;bottom:84px}.pamchal-ai-panel{left:8px;bottom:143px;width:calc(100vw - 16px);height:min(570px,calc(100dvh - 165px))}}
