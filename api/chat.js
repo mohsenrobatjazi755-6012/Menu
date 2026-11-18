@@ -30,7 +30,7 @@ function replyTo(question) {
     return "برای ارتباط مستقیم با باغ‌تالار پامچال با شماره " + VENUE.phone + " تماس بگیرید. اینستاگرام رسمی: " + VENUE.instagram;
   if (/مالک|مدیر|محسن|رباط/.test(q))
     return "طبق اطلاعات معرفی‌شده در وب‌سایت مجموعه، سید محسن رباط جزی مالک و مدیر باغ‌تالار پامچال است.";
-  return "برای راهنمایی دقیق‌تر، لطفاً سؤالتان را درباره منو و قیمت، خدمات مراسم، آدرس، تصاویر یا هماهنگی بازدید مشخص کنید. برای پاسخ قطعی مدیریت پامچال: " + VENUE.phone + ".";
+  return "این سؤال نیاز به بررسی مدیریت مجموعه دارد. اگر مایل باشید، نام و آیدی تلگرام‌تان را بفرستید تا درخواست شما برای مدیریت ارسال شود و پس از بررسی، پاسخ برایتان فرستاده شود.";
 }
 
 export default async function handler(req, res) {
@@ -47,5 +47,5 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "لطفاً پیام خود را وارد کنید." });
   if (last.content.length > 1000)
     return res.status(413).json({ error: "پیام بیش از حد طولانی است." });
-  return res.status(200).json({ answer: replyTo(last.content), mode: "free-faq" });
+  const answer = replyTo(last.content);\n  const unknown = /نیاز به بررسی مدیریت/.test(answer);\n  return res.status(200).json({ answer, needsFollowup: unknown, mode: "free-faq" });
 }
