@@ -16,24 +16,55 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "@id": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html#profile",
-  "url": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html",
-  "name": "سید محسن رباط جزی | کارآفرین و مالک برند پامچال",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html#person",
-    "name": "سید محسن رباط جزی",
-    "alternateName": ["سیدمحسن رباط‌جزی", "محسن رباط جزی", "Seyed Mohsen Robatjazi", "Mohsen Robatjazi"],
-    "url": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html",
-    "description": "سید محسن رباط جزی، کارآفرین، مدیر و مالک باغ‌تالار پامچال در مشهد.",
-    "jobTitle": "مالک و مدیر باغ‌تالار پامچال",
-    "owns": {"@id": "https://pamchal.vercel.app/#venue"},
-    "mainEntityOfPage": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html",
-    "telephone": "+989153696949",
-    "worksFor": {
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html#profile",
+      "url": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html",
+      "name": "سید محسن رباط جزی | مالک و مدیر باغ‌تالار پامچال شاندیز",
+      "inLanguage": "fa",
+      "mainEntity": {
+        "@id": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html#person"
+      },
+      "about": {
+        "@id": "https://pamchal.vercel.app/#venue"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html#person",
+      "name": "سید محسن رباط جزی",
+      "alternateName": [
+        "سیدمحسن رباط‌جزی",
+        "محسن رباط جزی",
+        "Seyed Mohsen Robatjazi",
+        "Mohsen Robatjazi"
+      ],
+      "url": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html",
+      "description": "مالک و مدیر باغ‌تالار پامچال شاندیز در مشهد؛ این صفحه، نام فارسی و لاتین او را به وب‌سایت رسمی مجموعه پیوند می‌دهد.",
+      "jobTitle": "مالک و مدیر باغ‌تالار پامچال",
+      "owns": {
+        "@id": "https://pamchal.vercel.app/#venue"
+      },
+      "worksFor": {
+        "@id": "https://pamchal.vercel.app/#venue"
+      },
+      "telephone": "+989153696949",
+      "sameAs": [
+        "https://www.instagram.com/pamchal_garden_hall/"
+      ],
+      "mainEntityOfPage": {
+        "@id": "https://pamchal.vercel.app/seyed-mohsen-robatjazi.html#profile"
+      }
+    },
+    {
       "@type": "EventVenue",
-      "name": "باغ‌تالار پامچال",
+      "@id": "https://pamchal.vercel.app/#venue",
+      "name": "باغ‌تالار پامچال شاندیز",
+      "alternateName": [
+        "باغ تالار پامچال",
+        "Pamchal Garden Hall"
+      ],
       "url": "https://pamchal.vercel.app/",
       "telephone": "+989153696949",
       "address": {
@@ -42,9 +73,12 @@
         "addressLocality": "مشهد",
         "addressRegion": "خراسان رضوی",
         "addressCountry": "IR"
-      }
+      },
+      "sameAs": [
+        "https://www.instagram.com/pamchal_garden_hall/"
+      ]
     }
-  }
+  ]
 }
 </script>
 <style>
